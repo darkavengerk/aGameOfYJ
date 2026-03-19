@@ -9,7 +9,7 @@ from card_layout_engine import CardRenderer
 from config import CARD_CONFIG
 
 class GapjaCardGenerator:
-    def __init__(self, data_dir="../../data", output_dir="../../images"):
+    def __init__(self, data_dir="../../data", output_dir="../images"):
         self.data_dir = os.path.join(os.path.dirname(__file__), data_dir)
         self.output_dir = os.path.join(os.path.dirname(__file__), output_dir)
         self.renderer = CardRenderer(CARD_CONFIG['width'], CARD_CONFIG['height'])

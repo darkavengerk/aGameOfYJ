@@ -104,8 +104,8 @@ class GapjaCardLayout(CardLayout):
         gan_color_info = self.colors_config['gan_colors'].get(card_data['gan'], {})
         gan_color = gan_color_info.get('color', '#F5F5DC')
         
-        # 어두운 배경 (청색, 적색, 흑색 계열)이면 흰색 텍스트
-        dark_colors = ['#2F4F4F', '#191970', '#1E90FF', '#DC143C']
+        # 어두운 배경 (수, 흑색 계열)이면 흰색 텍스트
+        dark_colors = ['#000000', '#2F4F4F', '#191970', '#1E90FF', '#DC143C']
         if gan_color in dark_colors:
             return self.colors_config.get('text_colors', {}).get('dark_background', '#FFFFFF')
         else:

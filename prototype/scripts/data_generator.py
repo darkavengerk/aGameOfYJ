@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from config import CARD_CONFIG, BOARD_CONFIG, COLORS, FONTS
 
 class DataImageGenerator:
-    def __init__(self, data_dir="../../data", output_dir="../../images"):
+    def __init__(self, data_dir="../../data", output_dir="../images"):
         self.data_dir = os.path.join(os.path.dirname(__file__), data_dir)
         self.output_dir = os.path.join(os.path.dirname(__file__), output_dir)
         self.card_config = CARD_CONFIG

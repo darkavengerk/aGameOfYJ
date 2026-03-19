@@ -51,13 +51,13 @@
       "direction": "서"
     },
     "임": {
-      "color": "#2F4F4F",
+      "color": "#000000",
       "element": "수",
       "english": "Water",
       "direction": "북"
     },
     "계": {
-      "color": "#2F4F4F",
+      "color": "#000000",
       "element": "수",
       "english": "Water",
       "direction": "북"
@@ -68,7 +68,7 @@
     "화": "#DC143C", 
     "토": "#FFD700",
     "금": "#F5F5F5",
-    "수": "#2F4F4F"
+    "수": "#000000"
   },
   "text_colors": {
     "light_background": "#2C1810",

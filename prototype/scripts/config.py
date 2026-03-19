@@ -63,6 +63,6 @@ GAME_COMPONENTS = {
 
 # 출력 경로 설정
 OUTPUT_PATHS = {
-    'images': '../images/',
+    'images': 'images/',
     'tabletop': '../tabletop/'
 }
