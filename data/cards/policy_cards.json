@@ -1,0 +1,50 @@
+{
+  "type": "policy_cards",
+  "description": "정책 카드 데이터",
+  "cards": [
+    {
+      "id": "policy_001",
+      "title": "탕평책",
+      "content": "당파 간 균형을 맞춰 정국 안정. 영향력 2 획득.",
+      "cost": {
+        "influence": 1
+      },
+      "effect": {
+        "influence": 2
+      }
+    },
+    {
+      "id": "policy_002", 
+      "title": "규장각 설치",
+      "content": "학문 기관 설치. 지식 토큰 2개 획득.",
+      "cost": {
+        "influence": 2
+      },
+      "effect": {
+        "knowledge": 2
+      }
+    },
+    {
+      "id": "policy_003",
+      "title": "군제 개혁", 
+      "content": "군사력 강화. 방어 토큰 1개 획득.",
+      "cost": {
+        "influence": 2
+      },
+      "effect": {
+        "defense": 1
+      }
+    },
+    {
+      "id": "policy_004",
+      "title": "대동법 실시",
+      "content": "세금 제도 개혁. 자원 토큰 3개 획득.",
+      "cost": {
+        "influence": 1
+      },
+      "effect": {
+        "resource": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "type": "five_elements",
+  "description": "오행(목화토금수) 정보",
+  "elements": {
+    "목": {
+      "name": "목",
+      "english": "Wood",
+      "color": "#1E90FF",
+      "direction": "동",
+      "season": "봄",
+      "characteristics": ["성장", "창조", "유연함"],
+      "gans": ["갑", "을"],
+      "zis": ["인", "묘"],
+      "relationship": {
+        "generates": "화",
+        "overcomes": "토",
+        "generated_by": "수",
+        "overcome_by": "금"
+      }
+    },
+    "화": {
+      "name": "화",
+      "english": "Fire", 
+      "color": "#DC143C",
+      "direction": "남",
+      "season": "여름",
+      "characteristics": ["열정", "활동", "명랑함"],
+      "gans": ["병", "정"],
+      "zis": ["사", "오"],
+      "relationship": {
+        "generates": "토",
+        "overcomes": "금",
+        "generated_by": "목",
+        "overcome_by": "수"
+      }
+    },
+    "토": {
+      "name": "토",
+      "english": "Earth",
+      "color": "#FFD700",
+      "direction": "중앙",
+      "season": "계절의 끝",
+      "characteristics": ["안정", "중재", "보호"],
+      "gans": ["무", "기"],
+      "zis": ["진", "술", "축", "미"],
+      "relationship": {
+        "generates": "금",
+        "overcomes": "수",
+        "generated_by": "화",
+        "overcome_by": "목"
+      }
+    },
+    "금": {
+      "name": "금",
+      "english": "Metal",
+      "color": "#F5F5F5",
+      "direction": "서",
+      "season": "가을",
+      "characteristics": ["수확", "정리", "규율"],
+      "gans": ["경", "신"],
+      "zis": ["신", "유"],
+      "relationship": {
+        "generates": "수",
+        "overcomes": "목",
+        "generated_by": "토",
+        "overcome_by": "화"
+      }
+    },
+    "수": {
+      "name": "수",
+      "english": "Water",
+      "color": "#2F4F4F",
+      "direction": "북",
+      "season": "겨울",
+      "characteristics": ["순환", "지혜", "적응"],
+      "gans": ["임", "계"],
+      "zis": ["자", "해"],
+      "relationship": {
+        "generates": "목",
+        "overcomes": "화",
+        "generated_by": "금",
+        "overcome_by": "토"
+      }
+    }
+  },
+  "cycle_diagram": {
+    "generation_cycle": ["목", "화", "토", "금", "수", "목"],
+    "overcoming_cycle": ["목", "토", "수", "화", "금", "목"]
+  }
+}

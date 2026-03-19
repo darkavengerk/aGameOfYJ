@@ -1,0 +1,56 @@
+{
+  "type": "board",
+  "description": "메인 보드 데이터",
+  "board": {
+    "id": "main_board",
+    "title": "영조의나라",
+    "width": 2400,
+    "height": 1800,
+    "grid_size": 60,
+    "margin": 100,
+    "sections": [
+      {
+        "id": "court",
+        "name": "조정",
+        "position": {"x": 0, "y": 0},
+        "size": {"width": 800, "height": 600},
+        "description": "왕과 대신들이 활동하는 중심 공간"
+      },
+      {
+        "id": "regions",
+        "name": "지방",
+        "position": {"x": 800, "y": 0},
+        "size": {"width": 800, "height": 600},
+        "description": "각 지방의 상황을 나타내는 공간"
+      },
+      {
+        "id": "foreign",
+        "name": "외교",
+        "position": {"x": 1600, "y": 0},
+        "size": {"width": 800, "height": 600},
+        "description": "청, 일본 등 외교 관련 공간"
+      },
+      {
+        "id": "policy_track",
+        "name": "정책 추진",
+        "position": {"x": 0, "y": 600},
+        "size": {"width": 2400, "height": 300},
+        "description": "정책 카드 추진 상황을 추적하는 공간"
+      },
+      {
+        "id": "event_track",
+        "name": "사건 기록",
+        "position": {"x": 0, "y": 900},
+        "size": {"width": 2400, "height": 300},
+        "description": "발생한 사건들을 기록하는 공간"
+      },
+      {
+        "id": "player_areas",
+        "name": "플레이어 구역",
+        "position": {"x": 0, "y": 1200},
+        "size": {"width": 2400, "height": 600},
+        "description": "각 플레이어의 개인 구역"
+      }
+    ]
+  }
+}

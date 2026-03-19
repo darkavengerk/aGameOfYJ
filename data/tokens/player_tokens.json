@@ -1,0 +1,102 @@
+{
+  "type": "player_tokens",
+  "description": "플레이어 토큰 데이터",
+  "tokens": [
+    {
+      "id": "influence_red",
+      "type": "influence",
+      "color": "red",
+      "label": "영",
+      "count": 5,
+      "description": "영향력 토큰"
+    },
+    {
+      "id": "action_red", 
+      "type": "action",
+      "color": "red",
+      "label": "행",
+      "count": 5,
+      "description": "행동 토큰"
+    },
+    {
+      "id": "resource_red",
+      "type": "resource", 
+      "color": "red",
+      "label": "자",
+      "count": 5,
+      "description": "자원 토큰"
+    },
+    {
+      "id": "influence_blue",
+      "type": "influence",
+      "color": "blue", 
+      "label": "영",
+      "count": 5,
+      "description": "영향력 토큰"
+    },
+    {
+      "id": "action_blue",
+      "type": "action",
+      "color": "blue",
+      "label": "행", 
+      "count": 5,
+      "description": "행동 토큰"
+    },
+    {
+      "id": "resource_blue",
+      "type": "resource",
+      "color": "blue",
+      "label": "자",
+      "count": 5, 
+      "description": "자원 토큰"
+    },
+    {
+      "id": "influence_green",
+      "type": "influence",
+      "color": "green",
+      "label": "영",
+      "count": 5,
+      "description": "영향력 토큰"
+    },
+    {
+      "id": "action_green",
+      "type": "action", 
+      "color": "green",
+      "label": "행",
+      "count": 5,
+      "description": "행동 토큰"
+    },
+    {
+      "id": "resource_green",
+      "type": "resource",
+      "color": "green",
+      "label": "자",
+      "count": 5,
+      "description": "자원 토큰"
+    },
+    {
+      "id": "influence_yellow",
+      "type": "influence",
+      "color": "yellow",
+      "label": "영", 
+      "count": 5,
+      "description": "영향력 토큰"
+    },
+    {
+      "id": "action_yellow",
+      "type": "action",
+      "color": "yellow",
+      "label": "행",
+      "count": 5,
+      "description": "행동 토큰"
+    },
+    {
+      "id": "resource_yellow",
+      "type": "resource",
+      "color": "yellow", 
+      "label": "자",
+      "count": 5,
+      "description": "자원 토큰"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": "zodiac_animals",
+  "description": "12지 동물 데이터",
+  "animals": {
+    "자": {
+      "name": "쥐",
+      "characteristics": ["영리함", "적응력", "번식력"],
+      "element": "水"
+    },
+    "축": {
+      "name": "소", 
+      "characteristics": ["인내심", "근면함", "충실함"],
+      "element": "土"
+    },
+    "인": {
+      "name": "호랑이",
+      "characteristics": ["용맹함", "리더십", "독립성"],
+      "element": "木"
+    },
+    "묘": {
+      "name": "토끼",
+      "characteristics": ["온순함", "신중함", "행운"],
+      "element": "木"
+    },
+    "진": {
+      "name": "용",
+      "characteristics": ["권위", "신비함", "성공"],
+      "element": "土"
+    },
+    "사": {
+      "name": "뱀",
+      "characteristics": ["지혜", "신비", "직관"],
+      "element": "火"
+    },
+    "오": {
+      "name": "말",
+      "characteristics": ["활동성", "자유", "열정"],
+      "element": "火"
+    },
+    "미": {
+      "name": "양",
+      "characteristics": ["온화함", "예술성", "협조"],
+      "element": "土"
+    },
+    "신": {
+      "name": "원숭이",
+      "characteristics": ["기지", "변화", "사교성"],
+      "element": "金"
+    },
+    "유": {
+      "name": "닭",
+      "characteristics": ["시간성", "정직함", "자부심"],
+      "element": "金"
+    },
+    "술": {
+      "name": "개",
+      "characteristics": ["충성", "보호", "정의"],
+      "element": "土"
+    },
+    "해": {
+      "name": "돼지",
+      "characteristics": ["관대함", "성실함", "행복"],
+      "element": "水"
+    }
+  }
+}

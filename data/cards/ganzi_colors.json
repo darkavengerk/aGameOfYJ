@@ -1,0 +1,81 @@
+{
+  "type": "ganzi_colors",
+  "description": "10간지 오방색 테이블",
+  "gan_colors": {
+    "갑": {
+      "color": "#1E90FF",
+      "element": "목",
+      "english": "Wood",
+      "direction": "동"
+    },
+    "을": {
+      "color": "#1E90FF", 
+      "element": "목",
+      "english": "Wood",
+      "direction": "동"
+    },
+    "병": {
+      "color": "#DC143C",
+      "element": "화",
+      "english": "Fire",
+      "direction": "남"
+    },
+    "정": {
+      "color": "#DC143C",
+      "element": "화", 
+      "english": "Fire",
+      "direction": "남"
+    },
+    "무": {
+      "color": "#FFD700",
+      "element": "토",
+      "english": "Earth",
+      "direction": "중앙"
+    },
+    "기": {
+      "color": "#FFD700",
+      "element": "토",
+      "english": "Earth", 
+      "direction": "중앙"
+    },
+    "경": {
+      "color": "#F5F5F5",
+      "element": "금",
+      "english": "Metal",
+      "direction": "서"
+    },
+    "신": {
+      "color": "#F5F5F5",
+      "element": "금",
+      "english": "Metal",
+      "direction": "서"
+    },
+    "임": {
+      "color": "#2F4F4F",
+      "element": "수",
+      "english": "Water",
+      "direction": "북"
+    },
+    "계": {
+      "color": "#2F4F4F",
+      "element": "수",
+      "english": "Water",
+      "direction": "북"
+    }
+  },
+  "element_colors": {
+    "목": "#1E90FF",
+    "화": "#DC143C", 
+    "토": "#FFD700",
+    "금": "#F5F5F5",
+    "수": "#2F4F4F"
+  },
+  "text_colors": {
+    "light_background": "#2C1810",
+    "dark_background": "#FFFFFF"
+  },
+  "background_colors": {
+    "yang": "#FFF8DC",
+    "yin": "#F5F5DC"
+  }
+}

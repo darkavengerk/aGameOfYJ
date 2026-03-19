@@ -1,0 +1,50 @@
+{
+  "type": "event_cards",
+  "description": "사건 카드 데이터",
+  "cards": [
+    {
+      "id": "event_001",
+      "title": "가뭄",
+      "content": "농업 피해. 모든 플레이어 영향력 1 감소.",
+      "trigger": "round_start",
+      "effect": {
+        "all_players": {
+          "influence": -1
+        }
+      }
+    },
+    {
+      "id": "event_002",
+      "title": "이조전랑 논쟁",
+      "content": "조정 분열. 다음 라운드 행동 토큰 1개 감소.",
+      "trigger": "round_start", 
+      "effect": {
+        "next_round": {
+          "action_tokens": -1
+        }
+      }
+    },
+    {
+      "id": "event_003",
+      "title": "민란 발생",
+      "content": "백성 불만. 리더 플레이어 영향력 2 감소.",
+      "trigger": "round_start",
+      "effect": {
+        "leading_player": {
+          "influence": -2
+        }
+      }
+    },
+    {
+      "id": "event_004",
+      "title": "청과의 무역",
+      "content": "경제 활성화. 모든 플레이어 자원 토큰 1개 획득.",
+      "trigger": "round_start",
+      "effect": {
+        "all_players": {
+          "resource": 1
+        }
+      }
+    }
+  ]
+}

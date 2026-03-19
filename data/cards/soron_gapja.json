@@ -1,0 +1,2325 @@
+{
+  "type": "soron_gapja",
+  "description": "소론 60갑자 카드",
+  "cards": [
+    {
+      "id": "soron_001",
+      "number": 1,
+      "gapja_name": "갑자",
+      "gan": "갑",
+      "ji": "자",
+      "animal": "쥐",
+      "gan_index": 0,
+      "zi_index": 0,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_002",
+      "number": 2,
+      "gapja_name": "을축",
+      "gan": "을",
+      "ji": "축",
+      "animal": "소",
+      "gan_index": 1,
+      "zi_index": 1,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_003",
+      "number": 3,
+      "gapja_name": "병인",
+      "gan": "병",
+      "ji": "인",
+      "animal": "호랑이",
+      "gan_index": 2,
+      "zi_index": 2,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_004",
+      "number": 4,
+      "gapja_name": "정묘",
+      "gan": "정",
+      "ji": "묘",
+      "animal": "토끼",
+      "gan_index": 3,
+      "zi_index": 3,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_005",
+      "number": 5,
+      "gapja_name": "무진",
+      "gan": "무",
+      "ji": "진",
+      "animal": "용",
+      "gan_index": 4,
+      "zi_index": 4,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_006",
+      "number": 6,
+      "gapja_name": "기사",
+      "gan": "기",
+      "ji": "사",
+      "animal": "뱀",
+      "gan_index": 5,
+      "zi_index": 5,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_007",
+      "number": 7,
+      "gapja_name": "경오",
+      "gan": "경",
+      "ji": "오",
+      "animal": "말",
+      "gan_index": 6,
+      "zi_index": 6,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_008",
+      "number": 8,
+      "gapja_name": "신미",
+      "gan": "신",
+      "ji": "미",
+      "animal": "양",
+      "gan_index": 7,
+      "zi_index": 7,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_009",
+      "number": 9,
+      "gapja_name": "임신",
+      "gan": "임",
+      "ji": "신",
+      "animal": "원숭이",
+      "gan_index": 8,
+      "zi_index": 8,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_010",
+      "number": 10,
+      "gapja_name": "계유",
+      "gan": "계",
+      "ji": "유",
+      "animal": "닭",
+      "gan_index": 9,
+      "zi_index": 9,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_011",
+      "number": 11,
+      "gapja_name": "갑술",
+      "gan": "갑",
+      "ji": "술",
+      "animal": "개",
+      "gan_index": 0,
+      "zi_index": 10,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": {
+        "name": "목의 힘",
+        "description": "목의 특성을 활용하여 추가 효과를 얻는다."
+      }
+    },
+    {
+      "id": "soron_012",
+      "number": 12,
+      "gapja_name": "을해",
+      "gan": "을",
+      "ji": "해",
+      "animal": "돼지",
+      "gan_index": 1,
+      "zi_index": 11,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_013",
+      "number": 13,
+      "gapja_name": "병자",
+      "gan": "병",
+      "ji": "자",
+      "animal": "쥐",
+      "gan_index": 2,
+      "zi_index": 0,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_014",
+      "number": 14,
+      "gapja_name": "정축",
+      "gan": "정",
+      "ji": "축",
+      "animal": "소",
+      "gan_index": 3,
+      "zi_index": 1,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_015",
+      "number": 15,
+      "gapja_name": "무인",
+      "gan": "무",
+      "ji": "인",
+      "animal": "호랑이",
+      "gan_index": 4,
+      "zi_index": 2,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_016",
+      "number": 16,
+      "gapja_name": "기묘",
+      "gan": "기",
+      "ji": "묘",
+      "animal": "토끼",
+      "gan_index": 5,
+      "zi_index": 3,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_017",
+      "number": 17,
+      "gapja_name": "경진",
+      "gan": "경",
+      "ji": "진",
+      "animal": "용",
+      "gan_index": 6,
+      "zi_index": 4,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_018",
+      "number": 18,
+      "gapja_name": "신사",
+      "gan": "신",
+      "ji": "사",
+      "animal": "뱀",
+      "gan_index": 7,
+      "zi_index": 5,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_019",
+      "number": 19,
+      "gapja_name": "임오",
+      "gan": "임",
+      "ji": "오",
+      "animal": "말",
+      "gan_index": 8,
+      "zi_index": 6,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_020",
+      "number": 20,
+      "gapja_name": "계미",
+      "gan": "계",
+      "ji": "미",
+      "animal": "양",
+      "gan_index": 9,
+      "zi_index": 7,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_021",
+      "number": 21,
+      "gapja_name": "갑신",
+      "gan": "갑",
+      "ji": "신",
+      "animal": "원숭이",
+      "gan_index": 0,
+      "zi_index": 8,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_022",
+      "number": 22,
+      "gapja_name": "을유",
+      "gan": "을",
+      "ji": "유",
+      "animal": "닭",
+      "gan_index": 1,
+      "zi_index": 9,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": {
+        "name": "목의 힘",
+        "description": "목의 특성을 활용하여 추가 효과를 얻는다."
+      }
+    },
+    {
+      "id": "soron_023",
+      "number": 23,
+      "gapja_name": "병술",
+      "gan": "병",
+      "ji": "술",
+      "animal": "개",
+      "gan_index": 2,
+      "zi_index": 10,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_024",
+      "number": 24,
+      "gapja_name": "정해",
+      "gan": "정",
+      "ji": "해",
+      "animal": "돼지",
+      "gan_index": 3,
+      "zi_index": 11,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_025",
+      "number": 25,
+      "gapja_name": "무자",
+      "gan": "무",
+      "ji": "자",
+      "animal": "쥐",
+      "gan_index": 4,
+      "zi_index": 0,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_026",
+      "number": 26,
+      "gapja_name": "기축",
+      "gan": "기",
+      "ji": "축",
+      "animal": "소",
+      "gan_index": 5,
+      "zi_index": 1,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_027",
+      "number": 27,
+      "gapja_name": "경인",
+      "gan": "경",
+      "ji": "인",
+      "animal": "호랑이",
+      "gan_index": 6,
+      "zi_index": 2,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_028",
+      "number": 28,
+      "gapja_name": "신묘",
+      "gan": "신",
+      "ji": "묘",
+      "animal": "토끼",
+      "gan_index": 7,
+      "zi_index": 3,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_029",
+      "number": 29,
+      "gapja_name": "임진",
+      "gan": "임",
+      "ji": "진",
+      "animal": "용",
+      "gan_index": 8,
+      "zi_index": 4,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_030",
+      "number": 30,
+      "gapja_name": "계사",
+      "gan": "계",
+      "ji": "사",
+      "animal": "뱀",
+      "gan_index": 9,
+      "zi_index": 5,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_031",
+      "number": 31,
+      "gapja_name": "갑오",
+      "gan": "갑",
+      "ji": "오",
+      "animal": "말",
+      "gan_index": 0,
+      "zi_index": 6,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_032",
+      "number": 32,
+      "gapja_name": "을미",
+      "gan": "을",
+      "ji": "미",
+      "animal": "양",
+      "gan_index": 1,
+      "zi_index": 7,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_033",
+      "number": 33,
+      "gapja_name": "병신",
+      "gan": "병",
+      "ji": "신",
+      "animal": "원숭이",
+      "gan_index": 2,
+      "zi_index": 8,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": {
+        "name": "화의 힘",
+        "description": "화의 특성을 활용하여 추가 효과를 얻는다."
+      }
+    },
+    {
+      "id": "soron_034",
+      "number": 34,
+      "gapja_name": "정유",
+      "gan": "정",
+      "ji": "유",
+      "animal": "닭",
+      "gan_index": 3,
+      "zi_index": 9,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_035",
+      "number": 35,
+      "gapja_name": "무술",
+      "gan": "무",
+      "ji": "술",
+      "animal": "개",
+      "gan_index": 4,
+      "zi_index": 10,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_036",
+      "number": 36,
+      "gapja_name": "기해",
+      "gan": "기",
+      "ji": "해",
+      "animal": "돼지",
+      "gan_index": 5,
+      "zi_index": 11,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_037",
+      "number": 37,
+      "gapja_name": "경자",
+      "gan": "경",
+      "ji": "자",
+      "animal": "쥐",
+      "gan_index": 6,
+      "zi_index": 0,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_038",
+      "number": 38,
+      "gapja_name": "신축",
+      "gan": "신",
+      "ji": "축",
+      "animal": "소",
+      "gan_index": 7,
+      "zi_index": 1,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_039",
+      "number": 39,
+      "gapja_name": "임인",
+      "gan": "임",
+      "ji": "인",
+      "animal": "호랑이",
+      "gan_index": 8,
+      "zi_index": 2,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_040",
+      "number": 40,
+      "gapja_name": "계묘",
+      "gan": "계",
+      "ji": "묘",
+      "animal": "토끼",
+      "gan_index": 9,
+      "zi_index": 3,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_041",
+      "number": 41,
+      "gapja_name": "갑진",
+      "gan": "갑",
+      "ji": "진",
+      "animal": "용",
+      "gan_index": 0,
+      "zi_index": 4,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_042",
+      "number": 42,
+      "gapja_name": "을사",
+      "gan": "을",
+      "ji": "사",
+      "animal": "뱀",
+      "gan_index": 1,
+      "zi_index": 5,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_043",
+      "number": 43,
+      "gapja_name": "병오",
+      "gan": "병",
+      "ji": "오",
+      "animal": "말",
+      "gan_index": 2,
+      "zi_index": 6,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_044",
+      "number": 44,
+      "gapja_name": "정미",
+      "gan": "정",
+      "ji": "미",
+      "animal": "양",
+      "gan_index": 3,
+      "zi_index": 7,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": {
+        "name": "화의 힘",
+        "description": "화의 특성을 활용하여 추가 효과를 얻는다."
+      }
+    },
+    {
+      "id": "soron_045",
+      "number": 45,
+      "gapja_name": "무신",
+      "gan": "무",
+      "ji": "신",
+      "animal": "원숭이",
+      "gan_index": 4,
+      "zi_index": 8,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_046",
+      "number": 46,
+      "gapja_name": "기유",
+      "gan": "기",
+      "ji": "유",
+      "animal": "닭",
+      "gan_index": 5,
+      "zi_index": 9,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_047",
+      "number": 47,
+      "gapja_name": "경술",
+      "gan": "경",
+      "ji": "술",
+      "animal": "개",
+      "gan_index": 6,
+      "zi_index": 10,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_048",
+      "number": 48,
+      "gapja_name": "신해",
+      "gan": "신",
+      "ji": "해",
+      "animal": "돼지",
+      "gan_index": 7,
+      "zi_index": 11,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_049",
+      "number": 49,
+      "gapja_name": "임자",
+      "gan": "임",
+      "ji": "자",
+      "animal": "쥐",
+      "gan_index": 8,
+      "zi_index": 0,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_050",
+      "number": 50,
+      "gapja_name": "계축",
+      "gan": "계",
+      "ji": "축",
+      "animal": "소",
+      "gan_index": 9,
+      "zi_index": 1,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_051",
+      "number": 51,
+      "gapja_name": "갑인",
+      "gan": "갑",
+      "ji": "인",
+      "animal": "호랑이",
+      "gan_index": 0,
+      "zi_index": 2,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_052",
+      "number": 52,
+      "gapja_name": "을묘",
+      "gan": "을",
+      "ji": "묘",
+      "animal": "토끼",
+      "gan_index": 1,
+      "zi_index": 3,
+      "element": "목",
+      "element_info": {
+        "name": "목",
+        "english": "Wood",
+        "color": "#1E90FF",
+        "direction": "동",
+        "season": "봄",
+        "characteristics": [
+          "성장",
+          "창조",
+          "유연함"
+        ],
+        "gans": [
+          "갑",
+          "을"
+        ],
+        "zis": [
+          "인",
+          "묘"
+        ],
+        "relationship": {
+          "generates": "화",
+          "overcomes": "토",
+          "generated_by": "수",
+          "overcome_by": "금"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_053",
+      "number": 53,
+      "gapja_name": "병진",
+      "gan": "병",
+      "ji": "진",
+      "animal": "용",
+      "gan_index": 2,
+      "zi_index": 4,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_054",
+      "number": 54,
+      "gapja_name": "정사",
+      "gan": "정",
+      "ji": "사",
+      "animal": "뱀",
+      "gan_index": 3,
+      "zi_index": 5,
+      "element": "화",
+      "element_info": {
+        "name": "화",
+        "english": "Fire",
+        "color": "#DC143C",
+        "direction": "남",
+        "season": "여름",
+        "characteristics": [
+          "열정",
+          "활동",
+          "명랑함"
+        ],
+        "gans": [
+          "병",
+          "정"
+        ],
+        "zis": [
+          "사",
+          "오"
+        ],
+        "relationship": {
+          "generates": "토",
+          "overcomes": "금",
+          "generated_by": "목",
+          "overcome_by": "수"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_055",
+      "number": 55,
+      "gapja_name": "무오",
+      "gan": "무",
+      "ji": "오",
+      "animal": "말",
+      "gan_index": 4,
+      "zi_index": 6,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": {
+        "name": "토의 힘",
+        "description": "토의 특성을 활용하여 추가 효과를 얻는다."
+      }
+    },
+    {
+      "id": "soron_056",
+      "number": 56,
+      "gapja_name": "기미",
+      "gan": "기",
+      "ji": "미",
+      "animal": "양",
+      "gan_index": 5,
+      "zi_index": 7,
+      "element": "토",
+      "element_info": {
+        "name": "토",
+        "english": "Earth",
+        "color": "#FFD700",
+        "direction": "중앙",
+        "season": "계절의 끝",
+        "characteristics": [
+          "안정",
+          "중재",
+          "보호"
+        ],
+        "gans": [
+          "무",
+          "기"
+        ],
+        "zis": [
+          "진",
+          "술",
+          "축",
+          "미"
+        ],
+        "relationship": {
+          "generates": "금",
+          "overcomes": "수",
+          "generated_by": "화",
+          "overcome_by": "목"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_057",
+      "number": 57,
+      "gapja_name": "경신",
+      "gan": "경",
+      "ji": "신",
+      "animal": "원숭이",
+      "gan_index": 6,
+      "zi_index": 8,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_058",
+      "number": 58,
+      "gapja_name": "신유",
+      "gan": "신",
+      "ji": "유",
+      "animal": "닭",
+      "gan_index": 7,
+      "zi_index": 9,
+      "element": "금",
+      "element_info": {
+        "name": "금",
+        "english": "Metal",
+        "color": "#F5F5F5",
+        "direction": "서",
+        "season": "가을",
+        "characteristics": [
+          "수확",
+          "정리",
+          "규율"
+        ],
+        "gans": [
+          "경",
+          "신"
+        ],
+        "zis": [
+          "신",
+          "유"
+        ],
+        "relationship": {
+          "generates": "수",
+          "overcomes": "목",
+          "generated_by": "토",
+          "overcome_by": "화"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_059",
+      "number": 59,
+      "gapja_name": "임술",
+      "gan": "임",
+      "ji": "술",
+      "animal": "개",
+      "gan_index": 8,
+      "zi_index": 10,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    },
+    {
+      "id": "soron_060",
+      "number": 60,
+      "gapja_name": "계해",
+      "gan": "계",
+      "ji": "해",
+      "animal": "돼지",
+      "gan_index": 9,
+      "zi_index": 11,
+      "element": "수",
+      "element_info": {
+        "name": "수",
+        "english": "Water",
+        "color": "#2F4F4F",
+        "direction": "북",
+        "season": "겨울",
+        "characteristics": [
+          "순환",
+          "지혜",
+          "적응"
+        ],
+        "gans": [
+          "임",
+          "계"
+        ],
+        "zis": [
+          "자",
+          "해"
+        ],
+        "relationship": {
+          "generates": "목",
+          "overcomes": "화",
+          "generated_by": "금",
+          "overcome_by": "토"
+        }
+      },
+      "special_ability": null
+    }
+  ]
+}
