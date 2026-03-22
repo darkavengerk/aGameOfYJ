@@ -1,7 +1,8 @@
-# 빌드 결과물
+# 빌드 결과물 (GitHub Actions가 자동으로 생성·커밋)
 prototype/images/
 rulebook/build/
 prototype/tabletop/
+deploy/
 
 # Python
 __pycache__/
