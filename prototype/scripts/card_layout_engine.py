@@ -43,16 +43,27 @@ class CardLayout(ABC):
         return x, y
     
     def get_font(self, font_config):
-        """폰트 생성"""
-        try:
-            font_name = font_config.get('name', 'malgun.ttf')
-            font_size = font_config['size']
-            font_weight = font_config.get('weight', 'normal')
-            
-            font = ImageFont.truetype(font_name, font_size)
-            return font
-        except:
-            return ImageFont.load_default()
+        """폰트 생성 — 한글 지원 폰트를 우선 탐색"""
+        font_size = font_config['size']
+        # font_config에 name이 있으면 그것을 먼저 시도, 없으면 한글 폰트 탐색
+        candidates = []
+        if 'name' in font_config:
+            candidates.append(font_config['name'])
+        candidates += [
+            'malgun.ttf',
+            '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc',
+            '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf',
+            '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf',
+            '/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc',
+            '/usr/share/fonts/google-noto-cjk/NotoSansCJKkr-Regular.otf',
+            '/System/Library/Fonts/AppleGothic.ttf',
+        ]
+        for path in candidates:
+            try:
+                return ImageFont.truetype(path, font_size)
+            except Exception:
+                continue
+        return ImageFont.load_default()
 
 class GapjaCardLayout(CardLayout):
     """60갑자 카드 레이아웃"""
