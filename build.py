@@ -28,6 +28,27 @@ DEPLOY_IMAGES    = os.path.join(DEPLOY_DIR, 'images')
 
 sys.path.insert(0, PROTOTYPE_SCRIPTS)
 
+# 한글 폰트 — config.py 와 동일한 탐색 순서
+def _find_korean_font():
+    _candidates = [
+        'malgun.ttf',
+        '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc',
+        '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf',
+        '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf',
+        '/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc',
+        '/usr/share/fonts/google-noto-cjk/NotoSansCJKkr-Regular.otf',
+        '/System/Library/Fonts/AppleGothic.ttf',
+    ]
+    for path in _candidates:
+        try:
+            ImageFont.truetype(path, 12)
+            return path
+        except Exception:
+            continue
+    return None
+
+KOREAN_FONT = _find_korean_font()
+
 # ─── GitHub Raw URL 설정 (TTS FaceURL / BackURL 에 사용) ──────
 GITHUB_USER   = 'darkavengerk'
 GITHUB_REPO   = 'aGameOfYJ'
@@ -100,7 +121,7 @@ def _make_hidden_card(w: int, h: int) -> Image.Image:
     draw = ImageDraw.Draw(img)
     draw.rectangle([6, 6, w - 6, h - 6], outline='#D4AF37', width=3)
     try:
-        font = ImageFont.truetype('malgun.ttf', 36)
+        font = ImageFont.truetype(KOREAN_FONT, 36) if KOREAN_FONT else ImageFont.load_default()
     except Exception:
         font = ImageFont.load_default()
     text = '영조의나라'
@@ -120,7 +141,7 @@ def _make_back_image() -> Image.Image:
     r = 45
     draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline='#D4AF37', width=3)
     try:
-        font = ImageFont.truetype('malgun.ttf', 28)
+        font = ImageFont.truetype(KOREAN_FONT, 28) if KOREAN_FONT else ImageFont.load_default()
     except Exception:
         font = ImageFont.load_default()
     text = '王'
