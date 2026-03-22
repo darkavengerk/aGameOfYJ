@@ -1,6 +1,6 @@
 {
   "SaveName": "영조의나라",
-  "Date": "2026-03-22T03:53:59.563117",
+  "Date": "2026-03-22T04:12:10.636554",
   "VersionNumber": "1.0",
   "GameMode": "영조의나라",
   "Table": "",
@@ -9,7 +9,7 @@
   "Rules": "",
   "ObjectStates": [
     {
-      "GUID": "1bf37c",
+      "GUID": "c7c382",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 0.0,
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "GUID": "486386",
+      "GUID": "12f170",
       "Name": "Deck",
       "Transform": {
         "posX": -6.0,
@@ -68,7 +68,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "c5075b",
+          "GUID": "28a8ce",
           "Name": "Card",
           "CardID": 100,
           "Nickname": "event_cards_001",
@@ -99,7 +99,7 @@
           ]
         },
         {
-          "GUID": "34d7d2",
+          "GUID": "89062b",
           "Name": "Card",
           "CardID": 101,
           "Nickname": "event_cards_002",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "GUID": "6c4804",
+          "GUID": "f5147d",
           "Name": "Card",
           "CardID": 102,
           "Nickname": "event_cards_003",
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "GUID": "d1d1bb",
+          "GUID": "a7b41a",
           "Name": "Card",
           "CardID": 103,
           "Nickname": "event_cards_004",
@@ -197,7 +197,7 @@
       ]
     },
     {
-      "GUID": "cb6ba3",
+      "GUID": "b546e0",
       "Name": "Deck",
       "Transform": {
         "posX": -3.0,
@@ -286,7 +286,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "712df5",
+          "GUID": "1bfd4d",
           "Name": "Card",
           "CardID": 200,
           "Nickname": "noron_gapja_001",
@@ -317,7 +317,7 @@
           ]
         },
         {
-          "GUID": "7817ef",
+          "GUID": "f687e5",
           "Name": "Card",
           "CardID": 201,
           "Nickname": "noron_gapja_002",
@@ -348,7 +348,7 @@
           ]
         },
         {
-          "GUID": "3bb490",
+          "GUID": "f081e5",
           "Name": "Card",
           "CardID": 202,
           "Nickname": "noron_gapja_003",
@@ -379,7 +379,7 @@
           ]
         },
         {
-          "GUID": "41e4fb",
+          "GUID": "1886c1",
           "Name": "Card",
           "CardID": 203,
           "Nickname": "noron_gapja_004",
@@ -410,7 +410,7 @@
           ]
         },
         {
-          "GUID": "eebd42",
+          "GUID": "9c5431",
           "Name": "Card",
           "CardID": 204,
           "Nickname": "noron_gapja_005",
@@ -441,7 +441,7 @@
           ]
         },
         {
-          "GUID": "40eb41",
+          "GUID": "aa4de4",
           "Name": "Card",
           "CardID": 205,
           "Nickname": "noron_gapja_006",
@@ -472,7 +472,7 @@
           ]
         },
         {
-          "GUID": "c12345",
+          "GUID": "c71bd9",
           "Name": "Card",
           "CardID": 206,
           "Nickname": "noron_gapja_007",
@@ -503,7 +503,7 @@
           ]
         },
         {
-          "GUID": "69af35",
+          "GUID": "8f9dac",
           "Name": "Card",
           "CardID": 207,
           "Nickname": "noron_gapja_008",
@@ -534,7 +534,7 @@
           ]
         },
         {
-          "GUID": "356110",
+          "GUID": "c33fb0",
           "Name": "Card",
           "CardID": 208,
           "Nickname": "noron_gapja_009",
@@ -565,7 +565,7 @@
           ]
         },
         {
-          "GUID": "b60518",
+          "GUID": "c7b3d7",
           "Name": "Card",
           "CardID": 209,
           "Nickname": "noron_gapja_010",
@@ -596,7 +596,7 @@
           ]
         },
         {
-          "GUID": "9639c1",
+          "GUID": "2530cf",
           "Name": "Card",
           "CardID": 210,
           "Nickname": "noron_gapja_011",
@@ -627,7 +627,7 @@
           ]
         },
         {
-          "GUID": "daad92",
+          "GUID": "8610aa",
           "Name": "Card",
           "CardID": 211,
           "Nickname": "noron_gapja_012",
@@ -658,7 +658,7 @@
           ]
         },
         {
-          "GUID": "fdc243",
+          "GUID": "038f98",
           "Name": "Card",
           "CardID": 212,
           "Nickname": "noron_gapja_013",
@@ -689,7 +689,7 @@
           ]
         },
         {
-          "GUID": "4157b9",
+          "GUID": "f574fc",
           "Name": "Card",
           "CardID": 213,
           "Nickname": "noron_gapja_014",
@@ -720,7 +720,7 @@
           ]
         },
         {
-          "GUID": "a9ff96",
+          "GUID": "214efe",
           "Name": "Card",
           "CardID": 214,
           "Nickname": "noron_gapja_015",
@@ -751,7 +751,7 @@
           ]
         },
         {
-          "GUID": "0e3388",
+          "GUID": "6532d9",
           "Name": "Card",
           "CardID": 215,
           "Nickname": "noron_gapja_016",
@@ -782,7 +782,7 @@
           ]
         },
         {
-          "GUID": "1819db",
+          "GUID": "2a81bc",
           "Name": "Card",
           "CardID": 216,
           "Nickname": "noron_gapja_017",
@@ -813,7 +813,7 @@
           ]
         },
         {
-          "GUID": "dedaf0",
+          "GUID": "5fc857",
           "Name": "Card",
           "CardID": 217,
           "Nickname": "noron_gapja_018",
@@ -844,7 +844,7 @@
           ]
         },
         {
-          "GUID": "ba3f6d",
+          "GUID": "7d8d5c",
           "Name": "Card",
           "CardID": 218,
           "Nickname": "noron_gapja_019",
@@ -875,7 +875,7 @@
           ]
         },
         {
-          "GUID": "091c3b",
+          "GUID": "8cbb00",
           "Name": "Card",
           "CardID": 219,
           "Nickname": "noron_gapja_020",
@@ -906,7 +906,7 @@
           ]
         },
         {
-          "GUID": "26ff86",
+          "GUID": "fb7935",
           "Name": "Card",
           "CardID": 220,
           "Nickname": "noron_gapja_021",
@@ -937,7 +937,7 @@
           ]
         },
         {
-          "GUID": "77d88d",
+          "GUID": "adaf96",
           "Name": "Card",
           "CardID": 221,
           "Nickname": "noron_gapja_022",
@@ -968,7 +968,7 @@
           ]
         },
         {
-          "GUID": "8d5d4f",
+          "GUID": "8544a8",
           "Name": "Card",
           "CardID": 222,
           "Nickname": "noron_gapja_023",
@@ -999,7 +999,7 @@
           ]
         },
         {
-          "GUID": "0ac745",
+          "GUID": "ac4a5a",
           "Name": "Card",
           "CardID": 223,
           "Nickname": "noron_gapja_024",
@@ -1030,7 +1030,7 @@
           ]
         },
         {
-          "GUID": "b038ae",
+          "GUID": "b8d475",
           "Name": "Card",
           "CardID": 224,
           "Nickname": "noron_gapja_025",
@@ -1061,7 +1061,7 @@
           ]
         },
         {
-          "GUID": "6b331c",
+          "GUID": "5b4805",
           "Name": "Card",
           "CardID": 225,
           "Nickname": "noron_gapja_026",
@@ -1092,7 +1092,7 @@
           ]
         },
         {
-          "GUID": "e12687",
+          "GUID": "b7d0ca",
           "Name": "Card",
           "CardID": 226,
           "Nickname": "noron_gapja_027",
@@ -1123,7 +1123,7 @@
           ]
         },
         {
-          "GUID": "9534c5",
+          "GUID": "666769",
           "Name": "Card",
           "CardID": 227,
           "Nickname": "noron_gapja_028",
@@ -1154,7 +1154,7 @@
           ]
         },
         {
-          "GUID": "a94443",
+          "GUID": "0f2d10",
           "Name": "Card",
           "CardID": 228,
           "Nickname": "noron_gapja_029",
@@ -1185,7 +1185,7 @@
           ]
         },
         {
-          "GUID": "526d38",
+          "GUID": "f2d35a",
           "Name": "Card",
           "CardID": 229,
           "Nickname": "noron_gapja_030",
@@ -1216,7 +1216,7 @@
           ]
         },
         {
-          "GUID": "1f87fb",
+          "GUID": "f9f41a",
           "Name": "Card",
           "CardID": 230,
           "Nickname": "noron_gapja_031",
@@ -1247,7 +1247,7 @@
           ]
         },
         {
-          "GUID": "4c20c2",
+          "GUID": "3f9730",
           "Name": "Card",
           "CardID": 231,
           "Nickname": "noron_gapja_032",
@@ -1278,7 +1278,7 @@
           ]
         },
         {
-          "GUID": "72c042",
+          "GUID": "6a75bd",
           "Name": "Card",
           "CardID": 232,
           "Nickname": "noron_gapja_033",
@@ -1309,7 +1309,7 @@
           ]
         },
         {
-          "GUID": "0e7957",
+          "GUID": "cd7b8c",
           "Name": "Card",
           "CardID": 233,
           "Nickname": "noron_gapja_034",
@@ -1340,7 +1340,7 @@
           ]
         },
         {
-          "GUID": "9decf1",
+          "GUID": "8605a9",
           "Name": "Card",
           "CardID": 234,
           "Nickname": "noron_gapja_035",
@@ -1371,7 +1371,7 @@
           ]
         },
         {
-          "GUID": "15638a",
+          "GUID": "510560",
           "Name": "Card",
           "CardID": 235,
           "Nickname": "noron_gapja_036",
@@ -1402,7 +1402,7 @@
           ]
         },
         {
-          "GUID": "bf8331",
+          "GUID": "54596a",
           "Name": "Card",
           "CardID": 236,
           "Nickname": "noron_gapja_037",
@@ -1433,7 +1433,7 @@
           ]
         },
         {
-          "GUID": "dd348e",
+          "GUID": "023d67",
           "Name": "Card",
           "CardID": 237,
           "Nickname": "noron_gapja_038",
@@ -1464,7 +1464,7 @@
           ]
         },
         {
-          "GUID": "9bde6d",
+          "GUID": "ffab2b",
           "Name": "Card",
           "CardID": 238,
           "Nickname": "noron_gapja_039",
@@ -1495,7 +1495,7 @@
           ]
         },
         {
-          "GUID": "6f0039",
+          "GUID": "d47325",
           "Name": "Card",
           "CardID": 239,
           "Nickname": "noron_gapja_040",
@@ -1526,7 +1526,7 @@
           ]
         },
         {
-          "GUID": "e2ab1b",
+          "GUID": "949de7",
           "Name": "Card",
           "CardID": 240,
           "Nickname": "noron_gapja_041",
@@ -1557,7 +1557,7 @@
           ]
         },
         {
-          "GUID": "071676",
+          "GUID": "57633a",
           "Name": "Card",
           "CardID": 241,
           "Nickname": "noron_gapja_042",
@@ -1588,7 +1588,7 @@
           ]
         },
         {
-          "GUID": "b98799",
+          "GUID": "5286f6",
           "Name": "Card",
           "CardID": 242,
           "Nickname": "noron_gapja_043",
@@ -1619,7 +1619,7 @@
           ]
         },
         {
-          "GUID": "57b9e3",
+          "GUID": "b50b11",
           "Name": "Card",
           "CardID": 243,
           "Nickname": "noron_gapja_044",
@@ -1650,7 +1650,7 @@
           ]
         },
         {
-          "GUID": "0889b6",
+          "GUID": "d8d68e",
           "Name": "Card",
           "CardID": 244,
           "Nickname": "noron_gapja_045",
@@ -1681,7 +1681,7 @@
           ]
         },
         {
-          "GUID": "3c9ece",
+          "GUID": "0cc38e",
           "Name": "Card",
           "CardID": 245,
           "Nickname": "noron_gapja_046",
@@ -1712,7 +1712,7 @@
           ]
         },
         {
-          "GUID": "42439b",
+          "GUID": "8dbb48",
           "Name": "Card",
           "CardID": 246,
           "Nickname": "noron_gapja_047",
@@ -1743,7 +1743,7 @@
           ]
         },
         {
-          "GUID": "202b9a",
+          "GUID": "3d3bdb",
           "Name": "Card",
           "CardID": 247,
           "Nickname": "noron_gapja_048",
@@ -1774,7 +1774,7 @@
           ]
         },
         {
-          "GUID": "30cf04",
+          "GUID": "4e62fc",
           "Name": "Card",
           "CardID": 248,
           "Nickname": "noron_gapja_049",
@@ -1805,7 +1805,7 @@
           ]
         },
         {
-          "GUID": "d7a2c7",
+          "GUID": "96a54d",
           "Name": "Card",
           "CardID": 249,
           "Nickname": "noron_gapja_050",
@@ -1836,7 +1836,7 @@
           ]
         },
         {
-          "GUID": "c76fd0",
+          "GUID": "3d82bf",
           "Name": "Card",
           "CardID": 250,
           "Nickname": "noron_gapja_051",
@@ -1867,7 +1867,7 @@
           ]
         },
         {
-          "GUID": "c2a626",
+          "GUID": "ea5278",
           "Name": "Card",
           "CardID": 251,
           "Nickname": "noron_gapja_052",
@@ -1898,7 +1898,7 @@
           ]
         },
         {
-          "GUID": "28e9ba",
+          "GUID": "2c9603",
           "Name": "Card",
           "CardID": 252,
           "Nickname": "noron_gapja_053",
@@ -1929,7 +1929,7 @@
           ]
         },
         {
-          "GUID": "27af2a",
+          "GUID": "5028d2",
           "Name": "Card",
           "CardID": 253,
           "Nickname": "noron_gapja_054",
@@ -1960,7 +1960,7 @@
           ]
         },
         {
-          "GUID": "45159b",
+          "GUID": "14f283",
           "Name": "Card",
           "CardID": 254,
           "Nickname": "noron_gapja_055",
@@ -1991,7 +1991,7 @@
           ]
         },
         {
-          "GUID": "0b02e6",
+          "GUID": "7d53e2",
           "Name": "Card",
           "CardID": 255,
           "Nickname": "noron_gapja_056",
@@ -2022,7 +2022,7 @@
           ]
         },
         {
-          "GUID": "a1ba86",
+          "GUID": "3d6ab8",
           "Name": "Card",
           "CardID": 256,
           "Nickname": "noron_gapja_057",
@@ -2053,7 +2053,7 @@
           ]
         },
         {
-          "GUID": "610b88",
+          "GUID": "d2cd4d",
           "Name": "Card",
           "CardID": 257,
           "Nickname": "noron_gapja_058",
@@ -2084,7 +2084,7 @@
           ]
         },
         {
-          "GUID": "5ac0f4",
+          "GUID": "5701e5",
           "Name": "Card",
           "CardID": 258,
           "Nickname": "noron_gapja_059",
@@ -2115,7 +2115,7 @@
           ]
         },
         {
-          "GUID": "2c633d",
+          "GUID": "cb58d7",
           "Name": "Card",
           "CardID": 259,
           "Nickname": "noron_gapja_060",
@@ -2151,7 +2151,7 @@
       ]
     },
     {
-      "GUID": "a860f9",
+      "GUID": "cb5aa9",
       "Name": "Deck",
       "Transform": {
         "posX": 0.0,
@@ -2184,7 +2184,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "63713c",
+          "GUID": "0d5323",
           "Name": "Card",
           "CardID": 300,
           "Nickname": "policy_cards_001",
@@ -2215,7 +2215,7 @@
           ]
         },
         {
-          "GUID": "b3f0ee",
+          "GUID": "53a1ea",
           "Name": "Card",
           "CardID": 301,
           "Nickname": "policy_cards_002",
@@ -2246,7 +2246,7 @@
           ]
         },
         {
-          "GUID": "d60638",
+          "GUID": "16b593",
           "Name": "Card",
           "CardID": 302,
           "Nickname": "policy_cards_003",
@@ -2277,7 +2277,7 @@
           ]
         },
         {
-          "GUID": "b3f272",
+          "GUID": "a75d55",
           "Name": "Card",
           "CardID": 303,
           "Nickname": "policy_cards_004",
@@ -2313,7 +2313,7 @@
       ]
     },
     {
-      "GUID": "b809f4",
+      "GUID": "d72c38",
       "Name": "Deck",
       "Transform": {
         "posX": 3.0,
@@ -2402,7 +2402,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "584421",
+          "GUID": "15e592",
           "Name": "Card",
           "CardID": 400,
           "Nickname": "soron_gapja_001",
@@ -2433,7 +2433,7 @@
           ]
         },
         {
-          "GUID": "393c14",
+          "GUID": "328324",
           "Name": "Card",
           "CardID": 401,
           "Nickname": "soron_gapja_002",
@@ -2464,7 +2464,7 @@
           ]
         },
         {
-          "GUID": "af1157",
+          "GUID": "00f4b2",
           "Name": "Card",
           "CardID": 402,
           "Nickname": "soron_gapja_003",
@@ -2495,7 +2495,7 @@
           ]
         },
         {
-          "GUID": "e5b123",
+          "GUID": "9ae683",
           "Name": "Card",
           "CardID": 403,
           "Nickname": "soron_gapja_004",
@@ -2526,7 +2526,7 @@
           ]
         },
         {
-          "GUID": "a32519",
+          "GUID": "ac30b8",
           "Name": "Card",
           "CardID": 404,
           "Nickname": "soron_gapja_005",
@@ -2557,7 +2557,7 @@
           ]
         },
         {
-          "GUID": "9eb88a",
+          "GUID": "4b97b5",
           "Name": "Card",
           "CardID": 405,
           "Nickname": "soron_gapja_006",
@@ -2588,7 +2588,7 @@
           ]
         },
         {
-          "GUID": "226262",
+          "GUID": "d7cce0",
           "Name": "Card",
           "CardID": 406,
           "Nickname": "soron_gapja_007",
@@ -2619,7 +2619,7 @@
           ]
         },
         {
-          "GUID": "494070",
+          "GUID": "0980d1",
           "Name": "Card",
           "CardID": 407,
           "Nickname": "soron_gapja_008",
@@ -2650,7 +2650,7 @@
           ]
         },
         {
-          "GUID": "20a0c4",
+          "GUID": "dc6fab",
           "Name": "Card",
           "CardID": 408,
           "Nickname": "soron_gapja_009",
@@ -2681,7 +2681,7 @@
           ]
         },
         {
-          "GUID": "7c2a3c",
+          "GUID": "d0c54d",
           "Name": "Card",
           "CardID": 409,
           "Nickname": "soron_gapja_010",
@@ -2712,7 +2712,7 @@
           ]
         },
         {
-          "GUID": "b26d7e",
+          "GUID": "717273",
           "Name": "Card",
           "CardID": 410,
           "Nickname": "soron_gapja_011",
@@ -2743,7 +2743,7 @@
           ]
         },
         {
-          "GUID": "7be208",
+          "GUID": "8aacd6",
           "Name": "Card",
           "CardID": 411,
           "Nickname": "soron_gapja_012",
@@ -2774,7 +2774,7 @@
           ]
         },
         {
-          "GUID": "c26050",
+          "GUID": "9fd93c",
           "Name": "Card",
           "CardID": 412,
           "Nickname": "soron_gapja_013",
@@ -2805,7 +2805,7 @@
           ]
         },
         {
-          "GUID": "3bcd10",
+          "GUID": "315697",
           "Name": "Card",
           "CardID": 413,
           "Nickname": "soron_gapja_014",
@@ -2836,7 +2836,7 @@
           ]
         },
         {
-          "GUID": "60ddfc",
+          "GUID": "cb8ac9",
           "Name": "Card",
           "CardID": 414,
           "Nickname": "soron_gapja_015",
@@ -2867,7 +2867,7 @@
           ]
         },
         {
-          "GUID": "d2768d",
+          "GUID": "19c329",
           "Name": "Card",
           "CardID": 415,
           "Nickname": "soron_gapja_016",
@@ -2898,7 +2898,7 @@
           ]
         },
         {
-          "GUID": "1e76be",
+          "GUID": "8806ab",
           "Name": "Card",
           "CardID": 416,
           "Nickname": "soron_gapja_017",
@@ -2929,7 +2929,7 @@
           ]
         },
         {
-          "GUID": "ac88b6",
+          "GUID": "bd9475",
           "Name": "Card",
           "CardID": 417,
           "Nickname": "soron_gapja_018",
@@ -2960,7 +2960,7 @@
           ]
         },
         {
-          "GUID": "f65cde",
+          "GUID": "6e5e5c",
           "Name": "Card",
           "CardID": 418,
           "Nickname": "soron_gapja_019",
@@ -2991,7 +2991,7 @@
           ]
         },
         {
-          "GUID": "565db2",
+          "GUID": "31c126",
           "Name": "Card",
           "CardID": 419,
           "Nickname": "soron_gapja_020",
@@ -3022,7 +3022,7 @@
           ]
         },
         {
-          "GUID": "cd2509",
+          "GUID": "65561f",
           "Name": "Card",
           "CardID": 420,
           "Nickname": "soron_gapja_021",
@@ -3053,7 +3053,7 @@
           ]
         },
         {
-          "GUID": "94ce62",
+          "GUID": "b2d162",
           "Name": "Card",
           "CardID": 421,
           "Nickname": "soron_gapja_022",
@@ -3084,7 +3084,7 @@
           ]
         },
         {
-          "GUID": "a9eaae",
+          "GUID": "223a76",
           "Name": "Card",
           "CardID": 422,
           "Nickname": "soron_gapja_023",
@@ -3115,7 +3115,7 @@
           ]
         },
         {
-          "GUID": "efc59f",
+          "GUID": "43c5d0",
           "Name": "Card",
           "CardID": 423,
           "Nickname": "soron_gapja_024",
@@ -3146,7 +3146,7 @@
           ]
         },
         {
-          "GUID": "02b120",
+          "GUID": "d20125",
           "Name": "Card",
           "CardID": 424,
           "Nickname": "soron_gapja_025",
@@ -3177,7 +3177,7 @@
           ]
         },
         {
-          "GUID": "6b09af",
+          "GUID": "166c03",
           "Name": "Card",
           "CardID": 425,
           "Nickname": "soron_gapja_026",
@@ -3208,7 +3208,7 @@
           ]
         },
         {
-          "GUID": "58df2b",
+          "GUID": "46d7bc",
           "Name": "Card",
           "CardID": 426,
           "Nickname": "soron_gapja_027",
@@ -3239,7 +3239,7 @@
           ]
         },
         {
-          "GUID": "bd19c5",
+          "GUID": "db554a",
           "Name": "Card",
           "CardID": 427,
           "Nickname": "soron_gapja_028",
@@ -3270,7 +3270,7 @@
           ]
         },
         {
-          "GUID": "f39c39",
+          "GUID": "bf6b1a",
           "Name": "Card",
           "CardID": 428,
           "Nickname": "soron_gapja_029",
@@ -3301,7 +3301,7 @@
           ]
         },
         {
-          "GUID": "6dbe9e",
+          "GUID": "e1c078",
           "Name": "Card",
           "CardID": 429,
           "Nickname": "soron_gapja_030",
@@ -3332,7 +3332,7 @@
           ]
         },
         {
-          "GUID": "3e69cf",
+          "GUID": "941207",
           "Name": "Card",
           "CardID": 430,
           "Nickname": "soron_gapja_031",
@@ -3363,7 +3363,7 @@
           ]
         },
         {
-          "GUID": "6e4e39",
+          "GUID": "4c290a",
           "Name": "Card",
           "CardID": 431,
           "Nickname": "soron_gapja_032",
@@ -3394,7 +3394,7 @@
           ]
         },
         {
-          "GUID": "f1a3ca",
+          "GUID": "3da8ec",
           "Name": "Card",
           "CardID": 432,
           "Nickname": "soron_gapja_033",
@@ -3425,7 +3425,7 @@
           ]
         },
         {
-          "GUID": "12e2f4",
+          "GUID": "342a13",
           "Name": "Card",
           "CardID": 433,
           "Nickname": "soron_gapja_034",
@@ -3456,7 +3456,7 @@
           ]
         },
         {
-          "GUID": "973709",
+          "GUID": "4a53e4",
           "Name": "Card",
           "CardID": 434,
           "Nickname": "soron_gapja_035",
@@ -3487,7 +3487,7 @@
           ]
         },
         {
-          "GUID": "3b152d",
+          "GUID": "3d3ffe",
           "Name": "Card",
           "CardID": 435,
           "Nickname": "soron_gapja_036",
@@ -3518,7 +3518,7 @@
           ]
         },
         {
-          "GUID": "4635b3",
+          "GUID": "54c374",
           "Name": "Card",
           "CardID": 436,
           "Nickname": "soron_gapja_037",
@@ -3549,7 +3549,7 @@
           ]
         },
         {
-          "GUID": "89ebdf",
+          "GUID": "ddcff5",
           "Name": "Card",
           "CardID": 437,
           "Nickname": "soron_gapja_038",
@@ -3580,7 +3580,7 @@
           ]
         },
         {
-          "GUID": "0d9b31",
+          "GUID": "d231ca",
           "Name": "Card",
           "CardID": 438,
           "Nickname": "soron_gapja_039",
@@ -3611,7 +3611,7 @@
           ]
         },
         {
-          "GUID": "f2ded7",
+          "GUID": "88ca8d",
           "Name": "Card",
           "CardID": 439,
           "Nickname": "soron_gapja_040",
@@ -3642,7 +3642,7 @@
           ]
         },
         {
-          "GUID": "e4fdd5",
+          "GUID": "c249aa",
           "Name": "Card",
           "CardID": 440,
           "Nickname": "soron_gapja_041",
@@ -3673,7 +3673,7 @@
           ]
         },
         {
-          "GUID": "714b10",
+          "GUID": "280784",
           "Name": "Card",
           "CardID": 441,
           "Nickname": "soron_gapja_042",
@@ -3704,7 +3704,7 @@
           ]
         },
         {
-          "GUID": "f34b75",
+          "GUID": "2b4114",
           "Name": "Card",
           "CardID": 442,
           "Nickname": "soron_gapja_043",
@@ -3735,7 +3735,7 @@
           ]
         },
         {
-          "GUID": "7824ad",
+          "GUID": "1eb8a3",
           "Name": "Card",
           "CardID": 443,
           "Nickname": "soron_gapja_044",
@@ -3766,7 +3766,7 @@
           ]
         },
         {
-          "GUID": "525fa1",
+          "GUID": "534924",
           "Name": "Card",
           "CardID": 444,
           "Nickname": "soron_gapja_045",
@@ -3797,7 +3797,7 @@
           ]
         },
         {
-          "GUID": "009996",
+          "GUID": "e544d1",
           "Name": "Card",
           "CardID": 445,
           "Nickname": "soron_gapja_046",
@@ -3828,7 +3828,7 @@
           ]
         },
         {
-          "GUID": "9ba35d",
+          "GUID": "b853af",
           "Name": "Card",
           "CardID": 446,
           "Nickname": "soron_gapja_047",
@@ -3859,7 +3859,7 @@
           ]
         },
         {
-          "GUID": "9f64e1",
+          "GUID": "8d0381",
           "Name": "Card",
           "CardID": 447,
           "Nickname": "soron_gapja_048",
@@ -3890,7 +3890,7 @@
           ]
         },
         {
-          "GUID": "4bec48",
+          "GUID": "8159f2",
           "Name": "Card",
           "CardID": 448,
           "Nickname": "soron_gapja_049",
@@ -3921,7 +3921,7 @@
           ]
         },
         {
-          "GUID": "c8b715",
+          "GUID": "aa8842",
           "Name": "Card",
           "CardID": 449,
           "Nickname": "soron_gapja_050",
@@ -3952,7 +3952,7 @@
           ]
         },
         {
-          "GUID": "cc34fc",
+          "GUID": "2fabd5",
           "Name": "Card",
           "CardID": 450,
           "Nickname": "soron_gapja_051",
@@ -3983,7 +3983,7 @@
           ]
         },
         {
-          "GUID": "d6021d",
+          "GUID": "0ace31",
           "Name": "Card",
           "CardID": 451,
           "Nickname": "soron_gapja_052",
@@ -4014,7 +4014,7 @@
           ]
         },
         {
-          "GUID": "0c82d2",
+          "GUID": "ae2dee",
           "Name": "Card",
           "CardID": 452,
           "Nickname": "soron_gapja_053",
@@ -4045,7 +4045,7 @@
           ]
         },
         {
-          "GUID": "5375d1",
+          "GUID": "c916fe",
           "Name": "Card",
           "CardID": 453,
           "Nickname": "soron_gapja_054",
@@ -4076,7 +4076,7 @@
           ]
         },
         {
-          "GUID": "fa1d4f",
+          "GUID": "d4f503",
           "Name": "Card",
           "CardID": 454,
           "Nickname": "soron_gapja_055",
@@ -4107,7 +4107,7 @@
           ]
         },
         {
-          "GUID": "ee9f72",
+          "GUID": "d36087",
           "Name": "Card",
           "CardID": 455,
           "Nickname": "soron_gapja_056",
@@ -4138,7 +4138,7 @@
           ]
         },
         {
-          "GUID": "3b64e3",
+          "GUID": "a4bc8b",
           "Name": "Card",
           "CardID": 456,
           "Nickname": "soron_gapja_057",
@@ -4169,7 +4169,7 @@
           ]
         },
         {
-          "GUID": "991b9d",
+          "GUID": "66c52b",
           "Name": "Card",
           "CardID": 457,
           "Nickname": "soron_gapja_058",
@@ -4200,7 +4200,7 @@
           ]
         },
         {
-          "GUID": "2b2d2b",
+          "GUID": "1fcca1",
           "Name": "Card",
           "CardID": 458,
           "Nickname": "soron_gapja_059",
@@ -4231,7 +4231,7 @@
           ]
         },
         {
-          "GUID": "1a987d",
+          "GUID": "2c2cf3",
           "Name": "Card",
           "CardID": 459,
           "Nickname": "soron_gapja_060",
