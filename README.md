@@ -1,107 +1,119 @@
 # 영조의나라 보드게임 프로젝트
 
-## 프로젝트 개요
-제2차 히트 게임즈 보드게임 공모전 2차 심사 제출을 위한 프로토타입 및 규칙서 개발 프로젝트
-
 ## 게임 정보
 - **테마:** 조선시대 영조 시대 정치 보드게임
-- **플레이 시간:** 60-90분
-- **플레이어 수:** 2-4인
-- **목표:** 한국적 정치 딜레마 체험과 전략적 결정
+- **플레이어 수:** 2–4인
+- **플레이 시간:** 60–90분
 
-## 제출 기한
-- **마감일:** 2025년 8월 23일
-- **제출물:** 
-  - Tabletop Simulator 프로토타입 (.json)
-  - 완성된 규칙서 (PDF)
+---
+
+## 빠른 시작
+
+```bash
+pip install Pillow
+python build.py
+```
+
+`deploy/` 폴더에 Tabletop Simulator용 파일이 생성됩니다.
+
+---
 
 ## 프로젝트 구조
-```
-영조보드게임/
-├── data/                   # 게임 데이터 (JSON)
-│   ├── cards/             # 카드 데이터
-│   ├── tokens/            # 토큰 데이터
-│   └── board/             # 보드 데이터
-├── prototype/             # 프로토타입 관련
-│   ├── images/            # 생성된 이미지 파일들
-│   ├── scripts/           # 이미지 생성 스크립트
-│   └── tabletop/          # Tabletop Simulator 파일
-├── rulebook/              # 규칙서 관련
-│   ├── src/               # 마크다운 소스
-│   ├── build/             # 빌드된 HTML/PDF
-│   └── assets/            # 규칙서 이미지 자산
-└── tools/                 # 자동화 도구들
-```
 
-## 데이터 기반 시스템
-
-### 데이터 구조
-- **data/cards/**: 카드 정보를 JSON으로 관리
-  - `policy_cards.json`: 정책 카드 데이터
-  - `event_cards.json`: 사건 카드 데이터
-- **data/tokens/**: 토큰 정보를 JSON으로 관리
-  - `player_tokens.json`: 플레이어 토큰 데이터
-- **data/board/**: 보드 정보를 JSON으로 관리
-  - `main_board.json`: 메인 보드 데이터
-
-### 이미지 생성
-데이터 폴더 구조를 그대로 유지하여 이미지 생성:
 ```
-data/cards/policy_cards.json → images/cards/policy_cards/
-data/tokens/player_tokens.json → images/tokens/player_tokens/
-data/board/main_board.json → images/board/
+aGameOfYJ/
+├── build.py                  # 통합 빌드 스크립트 (진입점)
+├── data/                     # 게임 데이터 (JSON)
+│   ├── cards/                # 카드 데이터
+│   │   ├── policy_cards.json
+│   │   ├── event_cards.json
+│   │   ├── noron_gapja.json  # 노론 60갑자 카드 (60장)
+│   │   ├── soron_gapja.json  # 소론 60갑자 카드 (60장)
+│   │   └── gapja_cards.json  # 갑자 카드 레이아웃 설정
+│   ├── tokens/
+│   │   └── player_tokens.json
+│   └── board/
+│       └── main_board.json
+├── prototype/
+│   └── scripts/              # 이미지 생성 모듈
+│       ├── config.py         # 카드 크기·색상·폰트 설정
+│       ├── data_generator.py # 정책·사건·토큰·보드 생성
+│       ├── gapja_generator.py# 60갑자 카드 생성
+│       └── card_layout_engine.py  # 갑자 카드 레이아웃 엔진
+├── docs/
+│   └── 생성규칙.md           # Tabletop Simulator 이미지 규칙
+├── deploy/                   # ⚠ 자동 생성 (gitignore됨)
+│   ├── index.html            # 생성 파일 미리보기 페이지
+│   ├── yeongjo_kingdom.json  # TTS 세이브 파일
+│   └── images/               # TTS용 카드 시트·보드 이미지
+└── .github/
+    └── workflows/
+        └── build.yml         # GitHub Actions 자동 빌드
 ```
 
-## 개발 환경
-- Python 3.9+
-- Pillow (이미지 생성)
-- Markdown (규칙서 작성)
-- Jinja2 (템플릿 엔진)
-- JSON (데이터 관리)
+---
 
-## 빌드 명령어
+## 빌드 파이프라인
 
-### 데이터 기반 빌드 (권장)
-```bash
-# 전체 빌드 (데이터 기반)
-python tools/build_data.py
+`python build.py` 한 번으로 아래 5단계가 순서대로 실행됩니다.
 
-# 이미지만 생성 (데이터 기반)
-python prototype/scripts/data_generator.py
+| Step | 작업 | 출력 |
+|------|------|------|
+| 1 | 개별 카드·보드·토큰 이미지 생성 | `prototype/images/` |
+| 2 | TTS 카드 시트 생성 | `deploy/images/*.jpg` |
+| 3 | 보드 배포 이미지 변환 | `deploy/images/main_board.jpg` |
+| 4 | TTS 세이브 파일 생성 | `deploy/yeongjo_kingdom.json` |
+| 5 | 미리보기 페이지 생성 | `deploy/index.html`, `index.html` |
+
+### TTS 카드 시트 규칙 (`docs/생성규칙.md` 준수)
+- 최대 10×7 그리드 (70슬롯), **마지막 슬롯 = 숨김 카드**
+- RGB 모드 JPEG, 파일당 2MB 이하 (초과 시 품질 자동 조정)
+- CustomDeck: `FaceURL` / `BackURL` / `NumWidth` / `NumHeight` 시트와 정확히 일치
+- 6자리 고유 GUID 자동 생성, URL은 `raw.githubusercontent.com` 형식
+
+---
+
+## GitHub Actions 자동 배포
+
+`master` 브랜치에 push하면 GitHub Actions가 자동으로 빌드 후 `deploy/` 를 커밋합니다.
+
+```
+코드 push → Actions 실행 → python build.py → deploy/ 커밋 → TTS 로드 가능
 ```
 
-### 기존 빌드 (하위 호환성)
-```bash
-# 전체 빌드 (하드코딩)
-python tools/build.py
+### 초기 설정 (1회)
 
-# 이미지만 생성 (하드코딩)
-python tools/quick_build.py
-```
+저장소 **Settings → Actions → General → Workflow permissions**
+→ **"Read and write permissions"** 선택 후 저장
 
-## 주요 기능
-1. **데이터 분리:** 게임 컴포넌트 정보를 JSON으로 별도 관리
-2. **자동 이미지 생성:** 데이터를 기반으로 카드, 토큰, 보드 이미지 자동 생성
-3. **폴더 구조 유지:** 데이터 폴더 구조를 이미지 폴더 구조에 그대로 반영
-4. **규칙서 자동화:** 구성품 목록 동기화, HTML/PDF 생성
-5. **Tabletop Simulator 연동:** JSON 세이브 파일 자동 생성
+### 확인 방법
+
+저장소 **Actions 탭** → "Build TTS Deploy Assets" 워크플로에서 실행 로그 확인
+
+---
 
 ## 데이터 수정 방법
 
-### 카드 추가
-1. `data/cards/` 폴더의 해당 JSON 파일에 카드 정보 추가
-2. `python tools/build_data.py` 실행
+### 카드 추가·수정
+`data/cards/` 의 JSON 파일을 수정한 뒤 push하면 Actions가 자동으로 반영합니다.
 
-### 토큰 수정
-1. `data/tokens/player_tokens.json` 파일 수정
-2. `python tools/build_data.py` 실행
+```jsonc
+// policy_cards.json 예시
+{
+  "type": "policy_cards",
+  "cards": [
+    { "id": "policy_001", "title": "탕평책", "content": "..." }
+  ]
+}
+```
 
-### 보드 변경
-1. `data/board/main_board.json` 파일 수정
-2. `python tools/build_data.py` 실행
+### 60갑자 카드 레이아웃 변경
+`data/cards/gapja_cards.json` 의 `layout` 섹션에서 각 요소의 위치·폰트 크기를 조정합니다.
 
-## 주요 특징
-- **코드와 데이터 분리:** 게임 규칙 변경 시 JSON 파일만 수정
-- **확장성:** 새로운 카드, 토큰, 보드를 데이터로 쉽게 추가
-- **자동화:** 데이터 변경 시 모든 산출물 자동 업데이트
-- **일관성:** 데이터 기반으로 모든 컴포넌트의 일관성 유지
+---
+
+## 개발 환경
+
+- Python 3.9+
+- [Pillow](https://pillow.readthedocs.io/) — 이미지 생성
+- 한글 폰트: 시스템에서 자동 탐색 (맑은 고딕 / WenQuanYi / IPA Gothic / Noto CJK)
