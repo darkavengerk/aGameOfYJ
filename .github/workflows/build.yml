@@ -1,0 +1,43 @@
+name: Build TTS Deploy Assets
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      # 봇이 deploy/ 를 커밋할 때 다시 트리거되지 않도록 제외
+      - 'deploy/**'
+      - 'index.html'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 빌드 결과물을 커밋·푸시하기 위해 필요
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Korean fonts
+        run: sudo apt-get install -y fonts-wqy-zenhei
+
+      - name: Install Python dependencies
+        run: pip install Pillow
+
+      - name: Build deploy assets
+        run: python build.py
+
+      - name: Commit & push deploy assets
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add deploy/ index.html
+          # 변경사항이 없으면 커밋하지 않음
+          git diff --staged --quiet && echo "변경 없음, 스킵" && exit 0
+          git commit -m "chore: rebuild TTS deploy assets [skip ci]"
+          git push
