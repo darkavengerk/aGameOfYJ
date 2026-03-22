@@ -35,12 +35,34 @@ COLORS = {
     'player_yellow': '#FFD700'  # 노란색
 }
 
-# 폰트 설정 (기본 시스템 폰트 사용)
+# 폰트 설정 — 한글 지원 폰트를 우선순위 순으로 탐색
+def _find_korean_font():
+    """시스템에서 사용 가능한 한글 지원 폰트 경로를 반환"""
+    candidates = [
+        'malgun.ttf',                                                      # Windows
+        '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc',                  # Debian/Ubuntu
+        '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf',            # Debian
+        '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf',              # Debian
+        '/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc',             # Fedora/RHEL
+        '/usr/share/fonts/google-noto-cjk/NotoSansCJKkr-Regular.otf',    # CentOS
+        '/System/Library/Fonts/AppleGothic.ttf',                          # macOS
+    ]
+    from PIL import ImageFont
+    for path in candidates:
+        try:
+            ImageFont.truetype(path, 12)
+            return path
+        except Exception:
+            continue
+    return None  # load_default() 사용
+
+_KOREAN_FONT = _find_korean_font()
+
 FONTS = {
-    'title': ('malgun.ttf', 24, 'bold'),
-    'subtitle': ('malgun.ttf', 18, 'normal'),
-    'body': ('malgun.ttf', 14, 'normal'),
-    'small': ('malgun.ttf', 12, 'normal')
+    'title':    (_KOREAN_FONT, 24, 'bold'),
+    'subtitle': (_KOREAN_FONT, 18, 'normal'),
+    'body':     (_KOREAN_FONT, 14, 'normal'),
+    'small':    (_KOREAN_FONT, 12, 'normal'),
 }
 
 # 게임 컴포넌트 목록
