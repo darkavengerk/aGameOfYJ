@@ -684,11 +684,21 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
 </html>
 '''
 
+    # deploy/index.html
     out_path = os.path.join(DEPLOY_DIR, 'index.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(html)
 
-    print(f'  index.html 생성 완료')
+    # 루트 index.html — 경로만 deploy/ 기준으로 변환
+    root_html = html.replace('href="images/', 'href="deploy/images/') \
+                    .replace('src="images/', 'src="deploy/images/') \
+                    .replace('href="yeongjo_kingdom.json"', 'href="deploy/yeongjo_kingdom.json"')
+    root_path = os.path.join(PROJECT_ROOT, 'index.html')
+    with open(root_path, 'w', encoding='utf-8') as f:
+        f.write(root_html)
+
+    print(f'  deploy/index.html 생성 완료')
+    print(f'  index.html (루트) 갱신 완료')
     return out_path
 
 

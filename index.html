@@ -1,9 +1,295 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>영조보드게임</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영조의나라 — TTS 배포 파일</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+      background: #120b06;
+      color: #e8d5b0;
+      min-height: 100vh;
+    }
+
+    /* ── 헤더 ── */
+    header {
+      background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 100%);
+      border-bottom: 3px solid #d4af37;
+      padding: 28px 36px 20px;
+    }
+    header h1 { font-size: 2rem; color: #d4af37; margin-bottom: 6px; }
+    header .meta { color: #a07850; font-size: 0.85rem; }
+
+    /* ── 통계 바 ── */
+    .stats-bar {
+      display: flex;
+      gap: 0;
+      background: #1e100a;
+      border-bottom: 1px solid #3a1f10;
+    }
+    .stat {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-right: 1px solid #3a1f10;
+    }
+    .stat:last-child { border-right: none; }
+    .stat-value { font-size: 1.8rem; font-weight: 700; color: #d4af37; }
+    .stat-label { font-size: 0.72rem; color: #7a5530; margin-top: 2px; }
+
+    /* ── 메인 ── */
+    main { padding: 36px; }
+
+    section { margin-bottom: 52px; }
+    section h2 {
+      font-size: 1.25rem;
+      color: #d4af37;
+      border-bottom: 2px solid #3a1f10;
+      padding-bottom: 8px;
+      margin-bottom: 22px;
+    }
+
+    /* ── 그리드 ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 18px;
+    }
+
+    /* ── 카드 아이템 ── */
+    .card-item {
+      background: #2c1810;
+      border: 1px solid #3a1f10;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card-item:hover {
+      border-color: #d4af37;
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 14px;
+      background: #1a0f0a;
+      border-bottom: 1px solid #3a1f10;
+    }
+    .item-name { font-weight: 700; font-size: 0.9rem; }
+    .item-badge {
+      font-size: 0.72rem;
+      color: #a07850;
+      background: #3a1f10;
+      padding: 2px 9px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .card-item a { display: block; }
+    .card-item img {
+      width: 100%;
+      height: 190px;
+      object-fit: contain;
+      background: #0d0703;
+      display: block;
+      transition: opacity 0.15s;
+    }
+    .card-item a:hover img { opacity: 0.85; }
+
+    .card-footer {
+      padding: 8px 14px 10px;
+      background: #1a0f0a;
+    }
+    .card-footer code {
+      font-size: 0.68rem;
+      color: #5a8cbf;
+      word-break: break-all;
+      display: block;
+      line-height: 1.4;
+    }
+
+    /* ── JSON 섹션 ── */
+    .json-box {
+      background: #2c1810;
+      border: 1px solid #3a1f10;
+      border-radius: 10px;
+      padding: 22px 26px;
+    }
+    .json-box p { color: #a07850; margin-bottom: 14px; line-height: 1.7; }
+    .json-box code { color: #d4af37; }
+    .dl-btn {
+      display: inline-block;
+      background: #d4af37;
+      color: #1a0f0a;
+      text-decoration: none;
+      padding: 10px 26px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .dl-btn:hover { background: #f0d060; }
+
+    /* ── 푸터 ── */
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #3a1f10;
+      font-size: 0.78rem;
+      border-top: 1px solid #1e100a;
+    }
+  </style>
 </head>
 <body>
-    <h1>영조보드게임</h1>
+
+<header>
+  <h1>영조의나라 — Tabletop Simulator 배포 파일</h1>
+  <div class="meta">
+    빌드: 2026년 03월 22일 04:12:10 &nbsp;|&nbsp;
+    저장소: darkavengerk/aGameOfYJ @ master
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-value">4</span>
+    <span class="stat-label">카드 시트</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">128</span>
+    <span class="stat-label">총 카드 수</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">1</span>
+    <span class="stat-label">보드</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">6</span>
+    <span class="stat-label">총 이미지</span>
+  </div>
+</div>
+
+<main>
+
+  <section>
+    <h2>카드 시트 (Card Sheets)</h2>
+    <div class="grid">
+      
+        <div class="card-item">
+          <div class="card-header">
+            <span class="item-name">event_cards</span>
+            <span class="item-badge">5×1 그리드 / 4장</span>
+          </div>
+          <a href="deploy/images/event_cards.jpg" target="_blank" title="클릭하면 원본 크기로 열림">
+            <img src="deploy/images/event_cards.jpg" alt="event_cards" loading="lazy">
+          </a>
+          <div class="card-footer">
+            <code>https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg</code>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-header">
+            <span class="item-name">noron_gapja</span>
+            <span class="item-badge">10×7 그리드 / 60장</span>
+          </div>
+          <a href="deploy/images/noron_gapja.jpg" target="_blank" title="클릭하면 원본 크기로 열림">
+            <img src="deploy/images/noron_gapja.jpg" alt="noron_gapja" loading="lazy">
+          </a>
+          <div class="card-footer">
+            <code>https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg</code>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-header">
+            <span class="item-name">policy_cards</span>
+            <span class="item-badge">5×1 그리드 / 4장</span>
+          </div>
+          <a href="deploy/images/policy_cards.jpg" target="_blank" title="클릭하면 원본 크기로 열림">
+            <img src="deploy/images/policy_cards.jpg" alt="policy_cards" loading="lazy">
+          </a>
+          <div class="card-footer">
+            <code>https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg</code>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-header">
+            <span class="item-name">soron_gapja</span>
+            <span class="item-badge">10×7 그리드 / 60장</span>
+          </div>
+          <a href="deploy/images/soron_gapja.jpg" target="_blank" title="클릭하면 원본 크기로 열림">
+            <img src="deploy/images/soron_gapja.jpg" alt="soron_gapja" loading="lazy">
+          </a>
+          <div class="card-footer">
+            <code>https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg</code>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>보드 (Board)</h2>
+    <div class="grid">
+      
+        <div class="card-item">
+          <div class="card-header">
+            <span class="item-name">main_board</span>
+            <span class="item-badge">2400×1800px</span>
+          </div>
+          <a href="deploy/images/main_board.jpg" target="_blank" title="클릭하면 원본 크기로 열림">
+            <img src="deploy/images/main_board.jpg" alt="main_board" loading="lazy">
+          </a>
+          <div class="card-footer">
+            <code>https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/main_board.jpg</code>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>카드 뒷면 (Card Back)</h2>
+    <div class="grid">
+      <div class="card-item">
+        <div class="card-header">
+          <span class="item-name">card_back</span>
+          <span class="item-badge">공용 뒷면</span>
+        </div>
+        <a href="deploy/images/card_back.jpg" target="_blank">
+          <img src="deploy/images/card_back.jpg" alt="card_back" loading="lazy">
+        </a>
+        <div class="card-footer">
+          <code>https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>TTS 세이브 파일 (Save File)</h2>
+    <div class="json-box">
+      <p>
+        아래 파일을 Tabletop Simulator 세이브 폴더에 복사하면<br>
+        게임을 바로 불러올 수 있습니다.<br>
+        <code>~/Documents/My Games/Tabletop Simulator/Saves/</code>
+      </p>
+      <a href="deploy/yeongjo_kingdom.json" download class="dl-btn">
+        yeongjo_kingdom.json 다운로드
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  영조의나라 &copy; 2026 &nbsp;|&nbsp;
+  Tabletop Simulator 배포용 자동 빌드
+</footer>
+
 </body>
 </html>
