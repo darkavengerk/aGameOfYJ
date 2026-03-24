@@ -137,6 +137,25 @@
     }
     .dl-btn:hover { background: #f0d060; }
 
+    /* ── 헤더 내비 ── */
+    .header-nav {
+      margin-top: 10px;
+    }
+    .nav-link {
+      display: inline-block;
+      border: 1px solid #3a1f10;
+      color: #a07850;
+      text-decoration: none;
+      padding: 5px 14px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      transition: border-color .2s, color .2s;
+    }
+    .nav-link:hover {
+      border-color: #d4af37;
+      color: #d4af37;
+    }
+
     /* ── 푸터 ── */
     footer {
       text-align: center;
@@ -152,9 +171,12 @@
 <header>
   <h1>영조의나라 — Tabletop Simulator 배포 파일</h1>
   <div class="meta">
-    빌드: 2026년 03월 24일 04:50:01 &nbsp;|&nbsp;
+    빌드: 2026년 03월 24일 05:02:46 &nbsp;|&nbsp;
     저장소: darkavengerk/aGameOfYJ @ master
   </div>
+  <nav class="header-nav">
+    <a href="editor/index.html" class="nav-link">카드 에디터 →</a>
+  </nav>
 </header>
 
 <div class="stats-bar">
