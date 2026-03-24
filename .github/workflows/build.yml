@@ -6,7 +6,6 @@ on:
     paths-ignore:
       # 봇이 deploy/ 를 커밋할 때 다시 트리거되지 않도록 제외
       - 'deploy/**'
-      - 'index.html'
 
 jobs:
   build:
@@ -36,7 +35,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f deploy/ index.html
+          git add -f deploy/ && git add index.html
           # 변경사항이 없으면 커밋하지 않음
           git diff --staged --quiet && echo "변경 없음, 스킵" && exit 0
           git commit -m "chore: rebuild TTS deploy assets [skip ci]"
