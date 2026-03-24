@@ -503,7 +503,8 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict,
 #  Step 5 – index.html 생성
 # ═══════════════════════════════════════════════════════════════
 def _render_html(deck_info: dict, board_info: dict,
-                 images_dir: str, json_file: str) -> str:
+                 images_dir: str, json_file: str,
+                 editor_link: str = 'editor/index.html') -> str:
     """HTML 미리보기 문자열 생성.
     images_dir : 이미지 상대 경로 접두사 (e.g. 'images' 또는 'deploy/images')
     json_file  : TTS JSON 상대 경로 (e.g. 'yeongjo_kingdom.json' 또는 'deploy/...')
@@ -695,6 +696,25 @@ def _render_html(deck_info: dict, board_info: dict,
     }}
     .dl-btn:hover {{ background: #f0d060; }}
 
+    /* ── 헤더 내비 ── */
+    .header-nav {{
+      margin-top: 10px;
+    }}
+    .nav-link {{
+      display: inline-block;
+      border: 1px solid #3a1f10;
+      color: #a07850;
+      text-decoration: none;
+      padding: 5px 14px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      transition: border-color .2s, color .2s;
+    }}
+    .nav-link:hover {{
+      border-color: #d4af37;
+      color: #d4af37;
+    }}
+
     /* ── 푸터 ── */
     footer {{
       text-align: center;
@@ -713,6 +733,9 @@ def _render_html(deck_info: dict, board_info: dict,
     빌드: {build_time} &nbsp;|&nbsp;
     저장소: {GITHUB_USER}/{GITHUB_REPO} @ {GITHUB_BRANCH}
   </div>
+  <nav class="header-nav">
+    <a href="{editor_link}" class="nav-link">카드 에디터 →</a>
+  </nav>
 </header>
 
 <div class="stats-bar">
@@ -801,7 +824,8 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
     # deploy/index.html — images/ 기준
     deploy_html = _render_html(deck_info, board_info,
                                images_dir='images',
-                               json_file='yeongjo_kingdom.json')
+                               json_file='yeongjo_kingdom.json',
+                               editor_link='../editor/index.html')
     out_path = os.path.join(DEPLOY_DIR, 'index.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(deploy_html)

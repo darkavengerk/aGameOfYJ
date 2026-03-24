@@ -4,7 +4,7 @@ prototype/images/
 rulebook/build/
 prototype/tabletop/
 deploy/
-index.html
+/index.html
 
 # Python
 __pycache__/
