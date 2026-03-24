@@ -31,11 +31,10 @@ class GapjaCardGenerator:
         print("60갑자 카드 생성 완료!")
     
     def _load_layout_config(self):
-        """레이아웃 설정 로드"""
-        config_path = os.path.join(self.data_dir, 'cards', 'gapja_cards.json')
-        with open(config_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        return data['layout']
+        """레이아웃 설정 로드 — data/layouts/ 에서 읽어옴"""
+        layout_path = os.path.join(self.data_dir, 'layouts', 'gapja_card.json')
+        with open(layout_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
     
     def _load_colors_config(self):
         """색상 설정 로드"""

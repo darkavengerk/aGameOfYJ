@@ -56,7 +56,8 @@ def _find_korean_font():
             continue
     return None  # load_default() 사용
 
-_KOREAN_FONT = _find_korean_font()
+KOREAN_FONT = _find_korean_font()   # 다른 모듈에서 import 가능한 공개 상수
+_KOREAN_FONT = KOREAN_FONT          # 하위 호환 별칭
 
 FONTS = {
     'title':    (_KOREAN_FONT, 24, 'bold'),
@@ -65,26 +66,3 @@ FONTS = {
     'small':    (_KOREAN_FONT, 12, 'normal'),
 }
 
-# 게임 컴포넌트 목록
-GAME_COMPONENTS = {
-    'cards': {
-        'policy_cards': [],      # 정책 카드
-        'event_cards': [],       # 사건 카드
-        'character_cards': []     # 인물 카드
-    },
-    'tokens': {
-        'influence_tokens': [],   # 영향력 토큰
-        'action_tokens': [],      # 행동 토큰
-        'resource_tokens': []     # 자원 토큰
-    },
-    'board': {
-        'main_board': '',         # 메인 보드
-        'player_mats': []         # 플레이어 매트
-    }
-}
-
-# 출력 경로 설정
-OUTPUT_PATHS = {
-    'images': 'images/',
-    'tabletop': '../tabletop/'
-}

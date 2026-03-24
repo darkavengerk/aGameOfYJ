@@ -1,6 +1,6 @@
 {
   "SaveName": "영조의나라",
-  "Date": "2026-03-22T05:03:28.006218",
+  "Date": "2026-03-24T13:27:37.118905",
   "VersionNumber": "1.0",
   "GameMode": "영조의나라",
   "Table": "",
@@ -9,7 +9,7 @@
   "Rules": "",
   "ObjectStates": [
     {
-      "GUID": "2da83a",
+      "GUID": "a9b230",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 0.0,
@@ -35,7 +35,307 @@
       ]
     },
     {
-      "GUID": "6c6204",
+      "GUID": "fec79c",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 14.0,
+        "posY": 1.0,
+        "posZ": -6.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "action_blue",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_blue.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_blue.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "0b72c8",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 15.2,
+        "posY": 1.0,
+        "posZ": -6.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "action_green",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_green.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_green.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "e27f96",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 16.4,
+        "posY": 1.0,
+        "posZ": -6.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "action_red",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_red.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_red.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "111488",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 14.0,
+        "posY": 1.0,
+        "posZ": -4.8,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "action_yellow",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_yellow.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/action_yellow.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "a226f9",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 15.2,
+        "posY": 1.0,
+        "posZ": -4.8,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "influence_blue",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_blue.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_blue.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "872f7c",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 16.4,
+        "posY": 1.0,
+        "posZ": -4.8,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "influence_green",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_green.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_green.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "c69bd3",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 14.0,
+        "posY": 1.0,
+        "posZ": -3.6,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "influence_red",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_red.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_red.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "08ab7a",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 15.2,
+        "posY": 1.0,
+        "posZ": -3.6,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "influence_yellow",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_yellow.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/influence_yellow.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "4568fd",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 16.4,
+        "posY": 1.0,
+        "posZ": -3.6,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "resource_blue",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_blue.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_blue.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "5e2e35",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 14.0,
+        "posY": 1.0,
+        "posZ": -2.4000000000000004,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "resource_green",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_green.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_green.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "7b3564",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 15.2,
+        "posY": 1.0,
+        "posZ": -2.4000000000000004,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "resource_red",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_red.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_red.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "1ab112",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 16.4,
+        "posY": 1.0,
+        "posZ": -2.4000000000000004,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "resource_yellow",
+      "Description": "player_tokens",
+      "CustomImage": {
+        "ImageURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_yellow.png",
+        "ImageSecondaryURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/tokens/player_tokens/resource_yellow.png"
+      },
+      "Tags": [
+        "token",
+        "player_tokens"
+      ]
+    },
+    {
+      "GUID": "269cdd",
       "Name": "Deck",
       "Transform": {
         "posX": -6.0,
@@ -49,18 +349,22 @@
         "scaleZ": 1.0
       },
       "Nickname": "event_cards",
-      "Description": "4장",
+      "Description": "8장",
       "DeckIDs": [
         100,
         101,
         102,
-        103
+        103,
+        104,
+        105,
+        106,
+        107
       ],
       "CustomDeck": {
         "1": {
           "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
           "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-          "NumWidth": 5,
+          "NumWidth": 9,
           "NumHeight": 1,
           "BackIsHidden": true,
           "UniqueBack": false
@@ -68,7 +372,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "8c3f62",
+          "GUID": "c9f21e",
           "Name": "Card",
           "CardID": 100,
           "Nickname": "event_cards_001",
@@ -88,7 +392,7 @@
             "1": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -99,7 +403,7 @@
           ]
         },
         {
-          "GUID": "2154b4",
+          "GUID": "a71a21",
           "Name": "Card",
           "CardID": 101,
           "Nickname": "event_cards_002",
@@ -119,7 +423,7 @@
             "1": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -130,7 +434,7 @@
           ]
         },
         {
-          "GUID": "47fb8e",
+          "GUID": "e88b4a",
           "Name": "Card",
           "CardID": 102,
           "Nickname": "event_cards_003",
@@ -150,7 +454,7 @@
             "1": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -161,7 +465,7 @@
           ]
         },
         {
-          "GUID": "9348cc",
+          "GUID": "835298",
           "Name": "Card",
           "CardID": 103,
           "Nickname": "event_cards_004",
@@ -181,7 +485,131 @@
             "1": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "event_cards"
+          ]
+        },
+        {
+          "GUID": "b5ed4e",
+          "Name": "Card",
+          "CardID": 104,
+          "Nickname": "event_cards_005",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "1": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "event_cards"
+          ]
+        },
+        {
+          "GUID": "3112d9",
+          "Name": "Card",
+          "CardID": 105,
+          "Nickname": "event_cards_006",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "1": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "event_cards"
+          ]
+        },
+        {
+          "GUID": "c19e96",
+          "Name": "Card",
+          "CardID": 106,
+          "Nickname": "event_cards_007",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "1": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "event_cards"
+          ]
+        },
+        {
+          "GUID": "5ad681",
+          "Name": "Card",
+          "CardID": 107,
+          "Nickname": "event_cards_008",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "1": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/event_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -197,7 +625,7 @@
       ]
     },
     {
-      "GUID": "b9f004",
+      "GUID": "591eb3",
       "Name": "Deck",
       "Transform": {
         "posX": -3.0,
@@ -211,7 +639,7 @@
         "scaleZ": 1.0
       },
       "Nickname": "noron_gapja",
-      "Description": "60장",
+      "Description": "69장",
       "DeckIDs": [
         200,
         201,
@@ -272,7 +700,16 @@
         256,
         257,
         258,
-        259
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268
       ],
       "CustomDeck": {
         "2": {
@@ -286,7 +723,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "88112e",
+          "GUID": "95b9b3",
           "Name": "Card",
           "CardID": 200,
           "Nickname": "noron_gapja_001",
@@ -317,7 +754,7 @@
           ]
         },
         {
-          "GUID": "ef3dd1",
+          "GUID": "1d2751",
           "Name": "Card",
           "CardID": 201,
           "Nickname": "noron_gapja_002",
@@ -348,7 +785,7 @@
           ]
         },
         {
-          "GUID": "f1cf81",
+          "GUID": "88a19c",
           "Name": "Card",
           "CardID": 202,
           "Nickname": "noron_gapja_003",
@@ -379,7 +816,7 @@
           ]
         },
         {
-          "GUID": "10933d",
+          "GUID": "01e8c0",
           "Name": "Card",
           "CardID": 203,
           "Nickname": "noron_gapja_004",
@@ -410,7 +847,7 @@
           ]
         },
         {
-          "GUID": "55f59e",
+          "GUID": "fd1c3c",
           "Name": "Card",
           "CardID": 204,
           "Nickname": "noron_gapja_005",
@@ -441,7 +878,7 @@
           ]
         },
         {
-          "GUID": "48ca28",
+          "GUID": "877c3e",
           "Name": "Card",
           "CardID": 205,
           "Nickname": "noron_gapja_006",
@@ -472,7 +909,7 @@
           ]
         },
         {
-          "GUID": "9a85a3",
+          "GUID": "3ee7f6",
           "Name": "Card",
           "CardID": 206,
           "Nickname": "noron_gapja_007",
@@ -503,7 +940,7 @@
           ]
         },
         {
-          "GUID": "e1ffad",
+          "GUID": "53e9d3",
           "Name": "Card",
           "CardID": 207,
           "Nickname": "noron_gapja_008",
@@ -534,7 +971,7 @@
           ]
         },
         {
-          "GUID": "e499dd",
+          "GUID": "d8f31d",
           "Name": "Card",
           "CardID": 208,
           "Nickname": "noron_gapja_009",
@@ -565,7 +1002,7 @@
           ]
         },
         {
-          "GUID": "17e857",
+          "GUID": "7a03eb",
           "Name": "Card",
           "CardID": 209,
           "Nickname": "noron_gapja_010",
@@ -596,7 +1033,7 @@
           ]
         },
         {
-          "GUID": "eae5ab",
+          "GUID": "25d763",
           "Name": "Card",
           "CardID": 210,
           "Nickname": "noron_gapja_011",
@@ -627,7 +1064,7 @@
           ]
         },
         {
-          "GUID": "12c5f3",
+          "GUID": "978ca4",
           "Name": "Card",
           "CardID": 211,
           "Nickname": "noron_gapja_012",
@@ -658,7 +1095,7 @@
           ]
         },
         {
-          "GUID": "e0e035",
+          "GUID": "045ef6",
           "Name": "Card",
           "CardID": 212,
           "Nickname": "noron_gapja_013",
@@ -689,7 +1126,7 @@
           ]
         },
         {
-          "GUID": "b38377",
+          "GUID": "8e1ea2",
           "Name": "Card",
           "CardID": 213,
           "Nickname": "noron_gapja_014",
@@ -720,7 +1157,7 @@
           ]
         },
         {
-          "GUID": "91ea9e",
+          "GUID": "4b0ac5",
           "Name": "Card",
           "CardID": 214,
           "Nickname": "noron_gapja_015",
@@ -751,7 +1188,7 @@
           ]
         },
         {
-          "GUID": "b3c61d",
+          "GUID": "0de1e4",
           "Name": "Card",
           "CardID": 215,
           "Nickname": "noron_gapja_016",
@@ -782,7 +1219,7 @@
           ]
         },
         {
-          "GUID": "c3d0fd",
+          "GUID": "6b9795",
           "Name": "Card",
           "CardID": 216,
           "Nickname": "noron_gapja_017",
@@ -813,7 +1250,7 @@
           ]
         },
         {
-          "GUID": "9b0f48",
+          "GUID": "8013d6",
           "Name": "Card",
           "CardID": 217,
           "Nickname": "noron_gapja_018",
@@ -844,7 +1281,7 @@
           ]
         },
         {
-          "GUID": "93332c",
+          "GUID": "d42eda",
           "Name": "Card",
           "CardID": 218,
           "Nickname": "noron_gapja_019",
@@ -875,7 +1312,7 @@
           ]
         },
         {
-          "GUID": "d63e85",
+          "GUID": "38d53c",
           "Name": "Card",
           "CardID": 219,
           "Nickname": "noron_gapja_020",
@@ -906,7 +1343,7 @@
           ]
         },
         {
-          "GUID": "a644ae",
+          "GUID": "e5276c",
           "Name": "Card",
           "CardID": 220,
           "Nickname": "noron_gapja_021",
@@ -937,7 +1374,7 @@
           ]
         },
         {
-          "GUID": "f7b8c0",
+          "GUID": "079cd2",
           "Name": "Card",
           "CardID": 221,
           "Nickname": "noron_gapja_022",
@@ -968,7 +1405,7 @@
           ]
         },
         {
-          "GUID": "3978ba",
+          "GUID": "478956",
           "Name": "Card",
           "CardID": 222,
           "Nickname": "noron_gapja_023",
@@ -999,7 +1436,7 @@
           ]
         },
         {
-          "GUID": "291bf7",
+          "GUID": "5a400a",
           "Name": "Card",
           "CardID": 223,
           "Nickname": "noron_gapja_024",
@@ -1030,7 +1467,7 @@
           ]
         },
         {
-          "GUID": "cd1e94",
+          "GUID": "87e279",
           "Name": "Card",
           "CardID": 224,
           "Nickname": "noron_gapja_025",
@@ -1061,7 +1498,7 @@
           ]
         },
         {
-          "GUID": "40da3b",
+          "GUID": "d92397",
           "Name": "Card",
           "CardID": 225,
           "Nickname": "noron_gapja_026",
@@ -1092,7 +1529,7 @@
           ]
         },
         {
-          "GUID": "576432",
+          "GUID": "cb1660",
           "Name": "Card",
           "CardID": 226,
           "Nickname": "noron_gapja_027",
@@ -1123,7 +1560,7 @@
           ]
         },
         {
-          "GUID": "5e70de",
+          "GUID": "0676f0",
           "Name": "Card",
           "CardID": 227,
           "Nickname": "noron_gapja_028",
@@ -1154,7 +1591,7 @@
           ]
         },
         {
-          "GUID": "3e2d42",
+          "GUID": "76980b",
           "Name": "Card",
           "CardID": 228,
           "Nickname": "noron_gapja_029",
@@ -1185,7 +1622,7 @@
           ]
         },
         {
-          "GUID": "bce5d5",
+          "GUID": "7ce15b",
           "Name": "Card",
           "CardID": 229,
           "Nickname": "noron_gapja_030",
@@ -1216,7 +1653,7 @@
           ]
         },
         {
-          "GUID": "f601a5",
+          "GUID": "0864c9",
           "Name": "Card",
           "CardID": 230,
           "Nickname": "noron_gapja_031",
@@ -1247,7 +1684,7 @@
           ]
         },
         {
-          "GUID": "09d78d",
+          "GUID": "77f7fe",
           "Name": "Card",
           "CardID": 231,
           "Nickname": "noron_gapja_032",
@@ -1278,7 +1715,7 @@
           ]
         },
         {
-          "GUID": "4a667f",
+          "GUID": "fedbdf",
           "Name": "Card",
           "CardID": 232,
           "Nickname": "noron_gapja_033",
@@ -1309,7 +1746,7 @@
           ]
         },
         {
-          "GUID": "da88eb",
+          "GUID": "2c81a2",
           "Name": "Card",
           "CardID": 233,
           "Nickname": "noron_gapja_034",
@@ -1340,7 +1777,7 @@
           ]
         },
         {
-          "GUID": "93db5c",
+          "GUID": "0579f5",
           "Name": "Card",
           "CardID": 234,
           "Nickname": "noron_gapja_035",
@@ -1371,7 +1808,7 @@
           ]
         },
         {
-          "GUID": "9c4f27",
+          "GUID": "49a24b",
           "Name": "Card",
           "CardID": 235,
           "Nickname": "noron_gapja_036",
@@ -1402,7 +1839,7 @@
           ]
         },
         {
-          "GUID": "c3700b",
+          "GUID": "f60d86",
           "Name": "Card",
           "CardID": 236,
           "Nickname": "noron_gapja_037",
@@ -1433,7 +1870,7 @@
           ]
         },
         {
-          "GUID": "e2c1b8",
+          "GUID": "a859d4",
           "Name": "Card",
           "CardID": 237,
           "Nickname": "noron_gapja_038",
@@ -1464,7 +1901,7 @@
           ]
         },
         {
-          "GUID": "307f14",
+          "GUID": "fe8663",
           "Name": "Card",
           "CardID": 238,
           "Nickname": "noron_gapja_039",
@@ -1495,7 +1932,7 @@
           ]
         },
         {
-          "GUID": "e7a559",
+          "GUID": "945693",
           "Name": "Card",
           "CardID": 239,
           "Nickname": "noron_gapja_040",
@@ -1526,7 +1963,7 @@
           ]
         },
         {
-          "GUID": "797b58",
+          "GUID": "ae9766",
           "Name": "Card",
           "CardID": 240,
           "Nickname": "noron_gapja_041",
@@ -1557,7 +1994,7 @@
           ]
         },
         {
-          "GUID": "b6956c",
+          "GUID": "ac63a2",
           "Name": "Card",
           "CardID": 241,
           "Nickname": "noron_gapja_042",
@@ -1588,7 +2025,7 @@
           ]
         },
         {
-          "GUID": "4b7ad6",
+          "GUID": "e48062",
           "Name": "Card",
           "CardID": 242,
           "Nickname": "noron_gapja_043",
@@ -1619,7 +2056,7 @@
           ]
         },
         {
-          "GUID": "9c1982",
+          "GUID": "7051d8",
           "Name": "Card",
           "CardID": 243,
           "Nickname": "noron_gapja_044",
@@ -1650,7 +2087,7 @@
           ]
         },
         {
-          "GUID": "3b1f36",
+          "GUID": "6724a8",
           "Name": "Card",
           "CardID": 244,
           "Nickname": "noron_gapja_045",
@@ -1681,7 +2118,7 @@
           ]
         },
         {
-          "GUID": "c3a82e",
+          "GUID": "de54d6",
           "Name": "Card",
           "CardID": 245,
           "Nickname": "noron_gapja_046",
@@ -1712,7 +2149,7 @@
           ]
         },
         {
-          "GUID": "6e1092",
+          "GUID": "a2e135",
           "Name": "Card",
           "CardID": 246,
           "Nickname": "noron_gapja_047",
@@ -1743,7 +2180,7 @@
           ]
         },
         {
-          "GUID": "d7aa61",
+          "GUID": "823cb6",
           "Name": "Card",
           "CardID": 247,
           "Nickname": "noron_gapja_048",
@@ -1774,7 +2211,7 @@
           ]
         },
         {
-          "GUID": "174be3",
+          "GUID": "18d4fe",
           "Name": "Card",
           "CardID": 248,
           "Nickname": "noron_gapja_049",
@@ -1805,7 +2242,7 @@
           ]
         },
         {
-          "GUID": "264f25",
+          "GUID": "99b930",
           "Name": "Card",
           "CardID": 249,
           "Nickname": "noron_gapja_050",
@@ -1836,7 +2273,7 @@
           ]
         },
         {
-          "GUID": "12f057",
+          "GUID": "31df9f",
           "Name": "Card",
           "CardID": 250,
           "Nickname": "noron_gapja_051",
@@ -1867,7 +2304,7 @@
           ]
         },
         {
-          "GUID": "545d1e",
+          "GUID": "c3f734",
           "Name": "Card",
           "CardID": 251,
           "Nickname": "noron_gapja_052",
@@ -1898,7 +2335,7 @@
           ]
         },
         {
-          "GUID": "266034",
+          "GUID": "0d79a1",
           "Name": "Card",
           "CardID": 252,
           "Nickname": "noron_gapja_053",
@@ -1929,7 +2366,7 @@
           ]
         },
         {
-          "GUID": "aa8dba",
+          "GUID": "0000ba",
           "Name": "Card",
           "CardID": 253,
           "Nickname": "noron_gapja_054",
@@ -1960,7 +2397,7 @@
           ]
         },
         {
-          "GUID": "e69289",
+          "GUID": "b77a4d",
           "Name": "Card",
           "CardID": 254,
           "Nickname": "noron_gapja_055",
@@ -1991,7 +2428,7 @@
           ]
         },
         {
-          "GUID": "83d8ab",
+          "GUID": "c8ef42",
           "Name": "Card",
           "CardID": 255,
           "Nickname": "noron_gapja_056",
@@ -2022,7 +2459,7 @@
           ]
         },
         {
-          "GUID": "db5297",
+          "GUID": "4ea2a6",
           "Name": "Card",
           "CardID": 256,
           "Nickname": "noron_gapja_057",
@@ -2053,7 +2490,7 @@
           ]
         },
         {
-          "GUID": "abd8c5",
+          "GUID": "9104fe",
           "Name": "Card",
           "CardID": 257,
           "Nickname": "noron_gapja_058",
@@ -2084,7 +2521,7 @@
           ]
         },
         {
-          "GUID": "5c9422",
+          "GUID": "c6fa66",
           "Name": "Card",
           "CardID": 258,
           "Nickname": "noron_gapja_059",
@@ -2115,10 +2552,289 @@
           ]
         },
         {
-          "GUID": "17465b",
+          "GUID": "2b2dc2",
           "Name": "Card",
           "CardID": 259,
           "Nickname": "noron_gapja_060",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "251706",
+          "Name": "Card",
+          "CardID": 260,
+          "Nickname": "noron_gapja_061",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "a7d0af",
+          "Name": "Card",
+          "CardID": 261,
+          "Nickname": "noron_gapja_062",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "1eec53",
+          "Name": "Card",
+          "CardID": 262,
+          "Nickname": "noron_gapja_063",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "e21d40",
+          "Name": "Card",
+          "CardID": 263,
+          "Nickname": "noron_gapja_064",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "8bb9c1",
+          "Name": "Card",
+          "CardID": 264,
+          "Nickname": "noron_gapja_065",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "06b790",
+          "Name": "Card",
+          "CardID": 265,
+          "Nickname": "noron_gapja_066",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "660918",
+          "Name": "Card",
+          "CardID": 266,
+          "Nickname": "noron_gapja_067",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "5b242f",
+          "Name": "Card",
+          "CardID": 267,
+          "Nickname": "noron_gapja_068",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "2": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/noron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "noron_gapja"
+          ]
+        },
+        {
+          "GUID": "1c9843",
+          "Name": "Card",
+          "CardID": 268,
+          "Nickname": "noron_gapja_069",
           "Description": "",
           "Transform": {
             "posX": 0.0,
@@ -2151,7 +2867,7 @@
       ]
     },
     {
-      "GUID": "5ad2a6",
+      "GUID": "92c634",
       "Name": "Deck",
       "Transform": {
         "posX": 0.0,
@@ -2165,18 +2881,22 @@
         "scaleZ": 1.0
       },
       "Nickname": "policy_cards",
-      "Description": "4장",
+      "Description": "8장",
       "DeckIDs": [
         300,
         301,
         302,
-        303
+        303,
+        304,
+        305,
+        306,
+        307
       ],
       "CustomDeck": {
         "3": {
           "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
           "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-          "NumWidth": 5,
+          "NumWidth": 9,
           "NumHeight": 1,
           "BackIsHidden": true,
           "UniqueBack": false
@@ -2184,7 +2904,7 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "8f3df2",
+          "GUID": "cfd9d4",
           "Name": "Card",
           "CardID": 300,
           "Nickname": "policy_cards_001",
@@ -2204,7 +2924,7 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2215,7 +2935,7 @@
           ]
         },
         {
-          "GUID": "fe38fc",
+          "GUID": "3b9ada",
           "Name": "Card",
           "CardID": 301,
           "Nickname": "policy_cards_002",
@@ -2235,7 +2955,7 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2246,7 +2966,7 @@
           ]
         },
         {
-          "GUID": "4471e3",
+          "GUID": "c11c6c",
           "Name": "Card",
           "CardID": 302,
           "Nickname": "policy_cards_003",
@@ -2266,7 +2986,7 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2277,7 +2997,7 @@
           ]
         },
         {
-          "GUID": "d383cf",
+          "GUID": "4017cb",
           "Name": "Card",
           "CardID": 303,
           "Nickname": "policy_cards_004",
@@ -2297,7 +3017,131 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "policy_cards"
+          ]
+        },
+        {
+          "GUID": "df6f31",
+          "Name": "Card",
+          "CardID": 304,
+          "Nickname": "policy_cards_005",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "policy_cards"
+          ]
+        },
+        {
+          "GUID": "c90c4a",
+          "Name": "Card",
+          "CardID": 305,
+          "Nickname": "policy_cards_006",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "policy_cards"
+          ]
+        },
+        {
+          "GUID": "cd6286",
+          "Name": "Card",
+          "CardID": 306,
+          "Nickname": "policy_cards_007",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "policy_cards"
+          ]
+        },
+        {
+          "GUID": "735f6e",
+          "Name": "Card",
+          "CardID": 307,
+          "Nickname": "policy_cards_008",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 9,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2313,7 +3157,7 @@
       ]
     },
     {
-      "GUID": "7eab31",
+      "GUID": "b773ac",
       "Name": "Deck",
       "Transform": {
         "posX": 3.0,
@@ -2326,72 +3170,179 @@
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
-      "Nickname": "soron_gapja",
-      "Description": "60장",
+      "Nickname": "sample_gapja",
+      "Description": "2장",
       "DeckIDs": [
         400,
-        401,
-        402,
-        403,
-        404,
-        405,
-        406,
-        407,
-        408,
-        409,
-        410,
-        411,
-        412,
-        413,
-        414,
-        415,
-        416,
-        417,
-        418,
-        419,
-        420,
-        421,
-        422,
-        423,
-        424,
-        425,
-        426,
-        427,
-        428,
-        429,
-        430,
-        431,
-        432,
-        433,
-        434,
-        435,
-        436,
-        437,
-        438,
-        439,
-        440,
-        441,
-        442,
-        443,
-        444,
-        445,
-        446,
-        447,
-        448,
-        449,
-        450,
-        451,
-        452,
-        453,
-        454,
-        455,
-        456,
-        457,
-        458,
-        459
+        401
       ],
       "CustomDeck": {
         "4": {
+          "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/sample_gapja.jpg",
+          "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+          "NumWidth": 3,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "ContainedObjects": [
+        {
+          "GUID": "767230",
+          "Name": "Card",
+          "CardID": 400,
+          "Nickname": "sample_gapja_001",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "4": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/sample_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 3,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "sample_gapja"
+          ]
+        },
+        {
+          "GUID": "40bbf2",
+          "Name": "Card",
+          "CardID": 401,
+          "Nickname": "sample_gapja_002",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "4": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/sample_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 3,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "sample_gapja"
+          ]
+        }
+      ],
+      "Tags": [
+        "sample_gapja"
+      ]
+    },
+    {
+      "GUID": "7b43c0",
+      "Name": "Deck",
+      "Transform": {
+        "posX": 6.0,
+        "posY": 1.0,
+        "posZ": -5.0,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "soron_gapja",
+      "Description": "69장",
+      "DeckIDs": [
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568
+      ],
+      "CustomDeck": {
+        "5": {
           "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
           "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
           "NumWidth": 10,
@@ -2402,9 +3353,9 @@
       },
       "ContainedObjects": [
         {
-          "GUID": "f903fc",
+          "GUID": "fc26e4",
           "Name": "Card",
-          "CardID": 400,
+          "CardID": 500,
           "Nickname": "soron_gapja_001",
           "Description": "",
           "Transform": {
@@ -2419,7 +3370,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2433,9 +3384,9 @@
           ]
         },
         {
-          "GUID": "46db12",
+          "GUID": "c56f5c",
           "Name": "Card",
-          "CardID": 401,
+          "CardID": 501,
           "Nickname": "soron_gapja_002",
           "Description": "",
           "Transform": {
@@ -2450,7 +3401,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2464,9 +3415,9 @@
           ]
         },
         {
-          "GUID": "03b9aa",
+          "GUID": "5e6609",
           "Name": "Card",
-          "CardID": 402,
+          "CardID": 502,
           "Nickname": "soron_gapja_003",
           "Description": "",
           "Transform": {
@@ -2481,7 +3432,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2495,9 +3446,9 @@
           ]
         },
         {
-          "GUID": "5e0bfa",
+          "GUID": "1b0ade",
           "Name": "Card",
-          "CardID": 403,
+          "CardID": 503,
           "Nickname": "soron_gapja_004",
           "Description": "",
           "Transform": {
@@ -2512,7 +3463,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2526,9 +3477,9 @@
           ]
         },
         {
-          "GUID": "6a6698",
+          "GUID": "42e23b",
           "Name": "Card",
-          "CardID": 404,
+          "CardID": 504,
           "Nickname": "soron_gapja_005",
           "Description": "",
           "Transform": {
@@ -2543,7 +3494,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2557,9 +3508,9 @@
           ]
         },
         {
-          "GUID": "5073c1",
+          "GUID": "d0eb54",
           "Name": "Card",
-          "CardID": 405,
+          "CardID": 505,
           "Nickname": "soron_gapja_006",
           "Description": "",
           "Transform": {
@@ -2574,7 +3525,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2588,9 +3539,9 @@
           ]
         },
         {
-          "GUID": "c972c7",
+          "GUID": "44f094",
           "Name": "Card",
-          "CardID": 406,
+          "CardID": 506,
           "Nickname": "soron_gapja_007",
           "Description": "",
           "Transform": {
@@ -2605,7 +3556,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2619,9 +3570,9 @@
           ]
         },
         {
-          "GUID": "32c0e9",
+          "GUID": "3329f2",
           "Name": "Card",
-          "CardID": 407,
+          "CardID": 507,
           "Nickname": "soron_gapja_008",
           "Description": "",
           "Transform": {
@@ -2636,7 +3587,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2650,9 +3601,9 @@
           ]
         },
         {
-          "GUID": "810ee2",
+          "GUID": "b69207",
           "Name": "Card",
-          "CardID": 408,
+          "CardID": 508,
           "Nickname": "soron_gapja_009",
           "Description": "",
           "Transform": {
@@ -2667,7 +3618,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2681,9 +3632,9 @@
           ]
         },
         {
-          "GUID": "afa835",
+          "GUID": "959320",
           "Name": "Card",
-          "CardID": 409,
+          "CardID": 509,
           "Nickname": "soron_gapja_010",
           "Description": "",
           "Transform": {
@@ -2698,7 +3649,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2712,9 +3663,9 @@
           ]
         },
         {
-          "GUID": "070b3b",
+          "GUID": "55bb1d",
           "Name": "Card",
-          "CardID": 410,
+          "CardID": 510,
           "Nickname": "soron_gapja_011",
           "Description": "",
           "Transform": {
@@ -2729,7 +3680,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2743,9 +3694,9 @@
           ]
         },
         {
-          "GUID": "f441ae",
+          "GUID": "6a7cbd",
           "Name": "Card",
-          "CardID": 411,
+          "CardID": 511,
           "Nickname": "soron_gapja_012",
           "Description": "",
           "Transform": {
@@ -2760,7 +3711,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2774,9 +3725,9 @@
           ]
         },
         {
-          "GUID": "f761a6",
+          "GUID": "4c0c53",
           "Name": "Card",
-          "CardID": 412,
+          "CardID": 512,
           "Nickname": "soron_gapja_013",
           "Description": "",
           "Transform": {
@@ -2791,7 +3742,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2805,9 +3756,9 @@
           ]
         },
         {
-          "GUID": "7a375b",
+          "GUID": "a61197",
           "Name": "Card",
-          "CardID": 413,
+          "CardID": 513,
           "Nickname": "soron_gapja_014",
           "Description": "",
           "Transform": {
@@ -2822,7 +3773,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2836,9 +3787,9 @@
           ]
         },
         {
-          "GUID": "672be4",
+          "GUID": "c9dd32",
           "Name": "Card",
-          "CardID": 414,
+          "CardID": 514,
           "Nickname": "soron_gapja_015",
           "Description": "",
           "Transform": {
@@ -2853,7 +3804,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2867,9 +3818,9 @@
           ]
         },
         {
-          "GUID": "c7bbad",
+          "GUID": "fb84a7",
           "Name": "Card",
-          "CardID": 415,
+          "CardID": 515,
           "Nickname": "soron_gapja_016",
           "Description": "",
           "Transform": {
@@ -2884,7 +3835,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2898,9 +3849,9 @@
           ]
         },
         {
-          "GUID": "6691df",
+          "GUID": "0a1364",
           "Name": "Card",
-          "CardID": 416,
+          "CardID": 516,
           "Nickname": "soron_gapja_017",
           "Description": "",
           "Transform": {
@@ -2915,7 +3866,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2929,9 +3880,9 @@
           ]
         },
         {
-          "GUID": "488364",
+          "GUID": "9eb54d",
           "Name": "Card",
-          "CardID": 417,
+          "CardID": 517,
           "Nickname": "soron_gapja_018",
           "Description": "",
           "Transform": {
@@ -2946,7 +3897,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2960,9 +3911,9 @@
           ]
         },
         {
-          "GUID": "d32dac",
+          "GUID": "d4bc19",
           "Name": "Card",
-          "CardID": 418,
+          "CardID": 518,
           "Nickname": "soron_gapja_019",
           "Description": "",
           "Transform": {
@@ -2977,7 +3928,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -2991,9 +3942,9 @@
           ]
         },
         {
-          "GUID": "201aa0",
+          "GUID": "9ea7ee",
           "Name": "Card",
-          "CardID": 419,
+          "CardID": 519,
           "Nickname": "soron_gapja_020",
           "Description": "",
           "Transform": {
@@ -3008,7 +3959,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3022,9 +3973,9 @@
           ]
         },
         {
-          "GUID": "ed7430",
+          "GUID": "0511f8",
           "Name": "Card",
-          "CardID": 420,
+          "CardID": 520,
           "Nickname": "soron_gapja_021",
           "Description": "",
           "Transform": {
@@ -3039,7 +3990,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3053,9 +4004,9 @@
           ]
         },
         {
-          "GUID": "2955a9",
+          "GUID": "7cf244",
           "Name": "Card",
-          "CardID": 421,
+          "CardID": 521,
           "Nickname": "soron_gapja_022",
           "Description": "",
           "Transform": {
@@ -3070,7 +4021,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3084,9 +4035,9 @@
           ]
         },
         {
-          "GUID": "9184e6",
+          "GUID": "d9acde",
           "Name": "Card",
-          "CardID": 422,
+          "CardID": 522,
           "Nickname": "soron_gapja_023",
           "Description": "",
           "Transform": {
@@ -3101,7 +4052,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3115,9 +4066,9 @@
           ]
         },
         {
-          "GUID": "e2f6aa",
+          "GUID": "242cb3",
           "Name": "Card",
-          "CardID": 423,
+          "CardID": 523,
           "Nickname": "soron_gapja_024",
           "Description": "",
           "Transform": {
@@ -3132,7 +4083,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3146,9 +4097,9 @@
           ]
         },
         {
-          "GUID": "f7fff3",
+          "GUID": "90f9f0",
           "Name": "Card",
-          "CardID": 424,
+          "CardID": 524,
           "Nickname": "soron_gapja_025",
           "Description": "",
           "Transform": {
@@ -3163,7 +4114,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3177,9 +4128,9 @@
           ]
         },
         {
-          "GUID": "364bf5",
+          "GUID": "74f039",
           "Name": "Card",
-          "CardID": 425,
+          "CardID": 525,
           "Nickname": "soron_gapja_026",
           "Description": "",
           "Transform": {
@@ -3194,7 +4145,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3208,9 +4159,9 @@
           ]
         },
         {
-          "GUID": "d53e22",
+          "GUID": "fc33b8",
           "Name": "Card",
-          "CardID": 426,
+          "CardID": 526,
           "Nickname": "soron_gapja_027",
           "Description": "",
           "Transform": {
@@ -3225,7 +4176,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3239,9 +4190,9 @@
           ]
         },
         {
-          "GUID": "b84fff",
+          "GUID": "ea9a7e",
           "Name": "Card",
-          "CardID": 427,
+          "CardID": 527,
           "Nickname": "soron_gapja_028",
           "Description": "",
           "Transform": {
@@ -3256,7 +4207,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3270,9 +4221,9 @@
           ]
         },
         {
-          "GUID": "e364c6",
+          "GUID": "dda0cf",
           "Name": "Card",
-          "CardID": 428,
+          "CardID": 528,
           "Nickname": "soron_gapja_029",
           "Description": "",
           "Transform": {
@@ -3287,7 +4238,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3301,9 +4252,9 @@
           ]
         },
         {
-          "GUID": "4dcc13",
+          "GUID": "db596b",
           "Name": "Card",
-          "CardID": 429,
+          "CardID": 529,
           "Nickname": "soron_gapja_030",
           "Description": "",
           "Transform": {
@@ -3318,7 +4269,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3332,9 +4283,9 @@
           ]
         },
         {
-          "GUID": "64e844",
+          "GUID": "307bee",
           "Name": "Card",
-          "CardID": 430,
+          "CardID": 530,
           "Nickname": "soron_gapja_031",
           "Description": "",
           "Transform": {
@@ -3349,7 +4300,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3363,9 +4314,9 @@
           ]
         },
         {
-          "GUID": "10a11a",
+          "GUID": "16708f",
           "Name": "Card",
-          "CardID": 431,
+          "CardID": 531,
           "Nickname": "soron_gapja_032",
           "Description": "",
           "Transform": {
@@ -3380,7 +4331,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3394,9 +4345,9 @@
           ]
         },
         {
-          "GUID": "399d0f",
+          "GUID": "63805f",
           "Name": "Card",
-          "CardID": 432,
+          "CardID": 532,
           "Nickname": "soron_gapja_033",
           "Description": "",
           "Transform": {
@@ -3411,7 +4362,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3425,9 +4376,9 @@
           ]
         },
         {
-          "GUID": "dc2d64",
+          "GUID": "1dc078",
           "Name": "Card",
-          "CardID": 433,
+          "CardID": 533,
           "Nickname": "soron_gapja_034",
           "Description": "",
           "Transform": {
@@ -3442,7 +4393,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3456,9 +4407,9 @@
           ]
         },
         {
-          "GUID": "03be96",
+          "GUID": "d98f89",
           "Name": "Card",
-          "CardID": 434,
+          "CardID": 534,
           "Nickname": "soron_gapja_035",
           "Description": "",
           "Transform": {
@@ -3473,7 +4424,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3487,9 +4438,9 @@
           ]
         },
         {
-          "GUID": "8fb10d",
+          "GUID": "8cfdf9",
           "Name": "Card",
-          "CardID": 435,
+          "CardID": 535,
           "Nickname": "soron_gapja_036",
           "Description": "",
           "Transform": {
@@ -3504,7 +4455,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3518,9 +4469,9 @@
           ]
         },
         {
-          "GUID": "1bd697",
+          "GUID": "3cf195",
           "Name": "Card",
-          "CardID": 436,
+          "CardID": 536,
           "Nickname": "soron_gapja_037",
           "Description": "",
           "Transform": {
@@ -3535,7 +4486,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3549,9 +4500,9 @@
           ]
         },
         {
-          "GUID": "59331b",
+          "GUID": "5a2e1b",
           "Name": "Card",
-          "CardID": 437,
+          "CardID": 537,
           "Nickname": "soron_gapja_038",
           "Description": "",
           "Transform": {
@@ -3566,7 +4517,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3580,9 +4531,9 @@
           ]
         },
         {
-          "GUID": "b89146",
+          "GUID": "d83cd5",
           "Name": "Card",
-          "CardID": 438,
+          "CardID": 538,
           "Nickname": "soron_gapja_039",
           "Description": "",
           "Transform": {
@@ -3597,7 +4548,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3611,9 +4562,9 @@
           ]
         },
         {
-          "GUID": "cf1317",
+          "GUID": "5e08db",
           "Name": "Card",
-          "CardID": 439,
+          "CardID": 539,
           "Nickname": "soron_gapja_040",
           "Description": "",
           "Transform": {
@@ -3628,7 +4579,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3642,9 +4593,9 @@
           ]
         },
         {
-          "GUID": "59752f",
+          "GUID": "747ebe",
           "Name": "Card",
-          "CardID": 440,
+          "CardID": 540,
           "Nickname": "soron_gapja_041",
           "Description": "",
           "Transform": {
@@ -3659,7 +4610,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3673,9 +4624,9 @@
           ]
         },
         {
-          "GUID": "a543bc",
+          "GUID": "adf85b",
           "Name": "Card",
-          "CardID": 441,
+          "CardID": 541,
           "Nickname": "soron_gapja_042",
           "Description": "",
           "Transform": {
@@ -3690,7 +4641,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3704,9 +4655,9 @@
           ]
         },
         {
-          "GUID": "2244f0",
+          "GUID": "35f5a2",
           "Name": "Card",
-          "CardID": 442,
+          "CardID": 542,
           "Nickname": "soron_gapja_043",
           "Description": "",
           "Transform": {
@@ -3721,7 +4672,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3735,9 +4686,9 @@
           ]
         },
         {
-          "GUID": "ed721b",
+          "GUID": "1cfe87",
           "Name": "Card",
-          "CardID": 443,
+          "CardID": 543,
           "Nickname": "soron_gapja_044",
           "Description": "",
           "Transform": {
@@ -3752,7 +4703,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3766,9 +4717,9 @@
           ]
         },
         {
-          "GUID": "b943ca",
+          "GUID": "97068c",
           "Name": "Card",
-          "CardID": 444,
+          "CardID": 544,
           "Nickname": "soron_gapja_045",
           "Description": "",
           "Transform": {
@@ -3783,7 +4734,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3797,9 +4748,9 @@
           ]
         },
         {
-          "GUID": "e8afbc",
+          "GUID": "d6d578",
           "Name": "Card",
-          "CardID": 445,
+          "CardID": 545,
           "Nickname": "soron_gapja_046",
           "Description": "",
           "Transform": {
@@ -3814,7 +4765,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3828,9 +4779,9 @@
           ]
         },
         {
-          "GUID": "51dbdb",
+          "GUID": "951608",
           "Name": "Card",
-          "CardID": 446,
+          "CardID": 546,
           "Nickname": "soron_gapja_047",
           "Description": "",
           "Transform": {
@@ -3845,7 +4796,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3859,9 +4810,9 @@
           ]
         },
         {
-          "GUID": "c50517",
+          "GUID": "c26b71",
           "Name": "Card",
-          "CardID": 447,
+          "CardID": 547,
           "Nickname": "soron_gapja_048",
           "Description": "",
           "Transform": {
@@ -3876,7 +4827,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3890,9 +4841,9 @@
           ]
         },
         {
-          "GUID": "e57bc9",
+          "GUID": "b332ce",
           "Name": "Card",
-          "CardID": 448,
+          "CardID": 548,
           "Nickname": "soron_gapja_049",
           "Description": "",
           "Transform": {
@@ -3907,7 +4858,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3921,9 +4872,9 @@
           ]
         },
         {
-          "GUID": "a1eaa6",
+          "GUID": "75801b",
           "Name": "Card",
-          "CardID": 449,
+          "CardID": 549,
           "Nickname": "soron_gapja_050",
           "Description": "",
           "Transform": {
@@ -3938,7 +4889,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3952,9 +4903,9 @@
           ]
         },
         {
-          "GUID": "ce5bf2",
+          "GUID": "a6bdf7",
           "Name": "Card",
-          "CardID": 450,
+          "CardID": 550,
           "Nickname": "soron_gapja_051",
           "Description": "",
           "Transform": {
@@ -3969,7 +4920,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -3983,9 +4934,9 @@
           ]
         },
         {
-          "GUID": "93d572",
+          "GUID": "5258b4",
           "Name": "Card",
-          "CardID": 451,
+          "CardID": 551,
           "Nickname": "soron_gapja_052",
           "Description": "",
           "Transform": {
@@ -4000,7 +4951,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4014,9 +4965,9 @@
           ]
         },
         {
-          "GUID": "13883f",
+          "GUID": "e86378",
           "Name": "Card",
-          "CardID": 452,
+          "CardID": 552,
           "Nickname": "soron_gapja_053",
           "Description": "",
           "Transform": {
@@ -4031,7 +4982,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4045,9 +4996,9 @@
           ]
         },
         {
-          "GUID": "0d2564",
+          "GUID": "4a6a3d",
           "Name": "Card",
-          "CardID": 453,
+          "CardID": 553,
           "Nickname": "soron_gapja_054",
           "Description": "",
           "Transform": {
@@ -4062,7 +5013,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4076,9 +5027,9 @@
           ]
         },
         {
-          "GUID": "840875",
+          "GUID": "bbc05b",
           "Name": "Card",
-          "CardID": 454,
+          "CardID": 554,
           "Nickname": "soron_gapja_055",
           "Description": "",
           "Transform": {
@@ -4093,7 +5044,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4107,9 +5058,9 @@
           ]
         },
         {
-          "GUID": "af0df9",
+          "GUID": "e20b18",
           "Name": "Card",
-          "CardID": 455,
+          "CardID": 555,
           "Nickname": "soron_gapja_056",
           "Description": "",
           "Transform": {
@@ -4124,7 +5075,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4138,9 +5089,9 @@
           ]
         },
         {
-          "GUID": "32c2fe",
+          "GUID": "b75af3",
           "Name": "Card",
-          "CardID": 456,
+          "CardID": 556,
           "Nickname": "soron_gapja_057",
           "Description": "",
           "Transform": {
@@ -4155,7 +5106,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4169,9 +5120,9 @@
           ]
         },
         {
-          "GUID": "e4a61d",
+          "GUID": "bf9ef7",
           "Name": "Card",
-          "CardID": 457,
+          "CardID": 557,
           "Nickname": "soron_gapja_058",
           "Description": "",
           "Transform": {
@@ -4186,7 +5137,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4200,9 +5151,9 @@
           ]
         },
         {
-          "GUID": "75bb3b",
+          "GUID": "38f2ba",
           "Name": "Card",
-          "CardID": 458,
+          "CardID": 558,
           "Nickname": "soron_gapja_059",
           "Description": "",
           "Transform": {
@@ -4217,7 +5168,7 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,
@@ -4231,9 +5182,9 @@
           ]
         },
         {
-          "GUID": "01d41f",
+          "GUID": "ecef4d",
           "Name": "Card",
-          "CardID": 459,
+          "CardID": 559,
           "Nickname": "soron_gapja_060",
           "Description": "",
           "Transform": {
@@ -4248,7 +5199,286 @@
             "scaleZ": 1.0
           },
           "CustomDeck": {
-            "4": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "a0f3a5",
+          "Name": "Card",
+          "CardID": 560,
+          "Nickname": "soron_gapja_061",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "b64e52",
+          "Name": "Card",
+          "CardID": 561,
+          "Nickname": "soron_gapja_062",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "c18f50",
+          "Name": "Card",
+          "CardID": 562,
+          "Nickname": "soron_gapja_063",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "8d5593",
+          "Name": "Card",
+          "CardID": 563,
+          "Nickname": "soron_gapja_064",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "adef68",
+          "Name": "Card",
+          "CardID": 564,
+          "Nickname": "soron_gapja_065",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "282c6e",
+          "Name": "Card",
+          "CardID": 565,
+          "Nickname": "soron_gapja_066",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "0a55a3",
+          "Name": "Card",
+          "CardID": 566,
+          "Nickname": "soron_gapja_067",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "40307c",
+          "Name": "Card",
+          "CardID": 567,
+          "Nickname": "soron_gapja_068",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 10,
+              "NumHeight": 7,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "soron_gapja"
+          ]
+        },
+        {
+          "GUID": "54eaed",
+          "Name": "Card",
+          "CardID": 568,
+          "Nickname": "soron_gapja_069",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "5": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/soron_gapja.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
               "NumWidth": 10,

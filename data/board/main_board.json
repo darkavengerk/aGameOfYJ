@@ -12,6 +12,14 @@
       {
         "id": "court",
         "name": "조정",
+        "type": "area",
+        "style": {
+          "background": "#FFF8F0",
+          "border_color": "#8B4513",
+          "border_width": 3,
+          "header_color": "#D4AF37",
+          "header_height": 40
+        },
         "position": {"x": 0, "y": 0},
         "size": {"width": 800, "height": 600},
         "description": "왕과 대신들이 활동하는 중심 공간"
@@ -19,6 +27,14 @@
       {
         "id": "regions",
         "name": "지방",
+        "type": "area",
+        "style": {
+          "background": "#F0F8E8",
+          "border_color": "#556B2F",
+          "border_width": 3,
+          "header_color": "#6B8E23",
+          "header_height": 40
+        },
         "position": {"x": 800, "y": 0},
         "size": {"width": 800, "height": 600},
         "description": "각 지방의 상황을 나타내는 공간"
@@ -26,6 +42,14 @@
       {
         "id": "foreign",
         "name": "외교",
+        "type": "area",
+        "style": {
+          "background": "#EEF0F8",
+          "border_color": "#4169E1",
+          "border_width": 3,
+          "header_color": "#4169E1",
+          "header_height": 40
+        },
         "position": {"x": 1600, "y": 0},
         "size": {"width": 800, "height": 600},
         "description": "청, 일본 등 외교 관련 공간"
@@ -33,6 +57,19 @@
       {
         "id": "policy_track",
         "name": "정책 추진",
+        "type": "track",
+        "slots": 8,
+        "slot_style": {
+          "background": "#F5F0E8",
+          "border_color": "#654321"
+        },
+        "style": {
+          "background": "#EDE0C8",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "header_color": "#D4AF37",
+          "header_height": 35
+        },
         "position": {"x": 0, "y": 600},
         "size": {"width": 2400, "height": 300},
         "description": "정책 카드 추진 상황을 추적하는 공간"
@@ -40,6 +77,19 @@
       {
         "id": "event_track",
         "name": "사건 기록",
+        "type": "track",
+        "slots": 8,
+        "slot_style": {
+          "background": "#F0E8E8",
+          "border_color": "#8B2020"
+        },
+        "style": {
+          "background": "#E8D0D0",
+          "border_color": "#8B2020",
+          "border_width": 2,
+          "header_color": "#DC143C",
+          "header_height": 35
+        },
         "position": {"x": 0, "y": 900},
         "size": {"width": 2400, "height": 300},
         "description": "발생한 사건들을 기록하는 공간"
@@ -47,6 +97,15 @@
       {
         "id": "player_areas",
         "name": "플레이어 구역",
+        "type": "player_mat",
+        "player_count": 4,
+        "style": {
+          "background": "#F5F5F0",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "header_color": "#D4AF37",
+          "header_height": 35
+        },
         "position": {"x": 0, "y": 1200},
         "size": {"width": 2400, "height": 600},
         "description": "각 플레이어의 개인 구역"

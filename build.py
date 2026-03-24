@@ -14,7 +14,7 @@ import os
 import sys
 import json
 import math
-import random
+import hashlib
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
@@ -28,26 +28,35 @@ DEPLOY_IMAGES    = os.path.join(DEPLOY_DIR, 'images')
 
 sys.path.insert(0, PROTOTYPE_SCRIPTS)
 
-# 한글 폰트 — config.py 와 동일한 탐색 순서
-def _find_korean_font():
-    _candidates = [
-        'malgun.ttf',
-        '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc',
-        '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf',
-        '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf',
-        '/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc',
-        '/usr/share/fonts/google-noto-cjk/NotoSansCJKkr-Regular.otf',
-        '/System/Library/Fonts/AppleGothic.ttf',
-    ]
-    for path in _candidates:
-        try:
-            ImageFont.truetype(path, 12)
-            return path
-        except Exception:
-            continue
-    return None
+from config import KOREAN_FONT  # 폰트 탐색 로직은 config.py 에서 일원화
+from handlers import CardDeckHandler, GapjaHandler, BoardHandler, TokenHandler
 
-KOREAN_FONT = _find_korean_font()
+# ─── 컴포넌트 핸들러 등록 ─────────────────────────────────────
+# 새 컴포넌트 추가 = 이 목록에 한 줄 추가
+HANDLERS = [
+    CardDeckHandler('policy_cards'),
+    CardDeckHandler('event_cards'),
+    GapjaHandler('noron_gapja'),
+    GapjaHandler('soron_gapja'),
+    BoardHandler('main_board'),
+    TokenHandler('player_tokens'),
+]
+
+# ─── 증분 빌드 캐시 ───────────────────────────────────────────
+_BUILD_CACHE_PATH = os.path.join(PROJECT_ROOT, '.build_cache.json')
+
+
+def _load_build_cache() -> dict:
+    try:
+        with open(_BUILD_CACHE_PATH, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def _save_build_cache(cache: dict):
+    with open(_BUILD_CACHE_PATH, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
 
 # ─── GitHub Raw URL 설정 (TTS FaceURL / BackURL 에 사용) ──────
 GITHUB_USER   = 'darkavengerk'
@@ -57,6 +66,9 @@ GITHUB_RAW    = (
     f'https://raw.githubusercontent.com/{GITHUB_USER}/'
     f'{GITHUB_REPO}/{GITHUB_BRANCH}/deploy/images'
 )
+
+# ─── TTS 스케일 상수 (생성규칙.md §3) ────────────────────────
+PX_PER_TTS_UNIT = 120   # 1 TTS 유닛 = 120px (보드 스케일 자동 계산용)
 
 # ─── TTS 시트 규칙 (생성규칙.md §2) ──────────────────────────
 MAX_COLS       = 10    # 최대 가로 칸 수
@@ -69,35 +81,41 @@ MAX_FILE_MB    = 2.0   # 파일당 최대 크기 (MB)
 # ─── GUID 유니크 보장 (생성규칙.md §3) ───────────────────────
 _used_guids: set = set()
 
-def _new_guid() -> str:
-    """6자리 고유 GUID 생성"""
-    while True:
-        g = '%06x' % random.randint(0, 0xFFFFFF)
+def _make_guid(context: str) -> str:
+    """context 문자열 기반 결정론적 6자리 GUID 생성.
+    같은 context는 항상 같은 GUID를 반환하므로 빌드 간 불필요한 diff가 발생하지 않는다.
+    충돌 시 :{n} suffix를 붙여 재시도.
+    """
+    for i in range(100):
+        key = context if i == 0 else f'{context}:{i}'
+        g = hashlib.sha1(key.encode()).hexdigest()[:6]
         if g not in _used_guids:
             _used_guids.add(g)
             return g
+    raise RuntimeError(f'GUID 충돌 해소 실패: {context}')
 
 
 # ═══════════════════════════════════════════════════════════════
-#  Step 1 – 개별 이미지 생성
+#  Step 1 – 개별 이미지 생성 (ComponentHandler 기반)
 # ═══════════════════════════════════════════════════════════════
-def step1_generate_images():
+def step1_generate_images(force: bool = False):
+    """HANDLERS 목록의 각 핸들러가 자신의 이미지를 생성한다.
+    증분 빌드: 입력 해시가 동일하고 출력 파일이 존재하면 건너뜀.
+    force=True 이면 캐시를 무시하고 전부 재생성.
+    """
     print('\n=== Step 1: 개별 이미지 생성 ===')
-    from data_generator import DataImageGenerator
-    from gapja_generator import GapjaCardGenerator
+    cache = _load_build_cache()
 
-    # data_generator 는 __file__ 기준 상대경로를 사용하므로 기본값으로 호출
-    gen = DataImageGenerator()
-    gen.generate_cards()
-    gen.generate_boards()
+    for handler in HANDLERS:
+        name = type(handler).__name__
+        label = getattr(handler, 'deck_name',
+                getattr(handler, 'faction_name',
+                getattr(handler, 'board_name',
+                getattr(handler, 'token_name', '?'))))
+        print(f'  [{name}] {label}')
+        handler.generate_images(cache, force=force)
 
-    tokens_dir = os.path.join(DATA_DIR, 'tokens')
-    if os.path.isdir(tokens_dir):
-        gen.generate_tokens()
-
-    gapja = GapjaCardGenerator()
-    gapja.generate_all_gapja_cards()
-
+    _save_build_cache(cache)
     print('개별 이미지 생성 완료')
 
 
@@ -256,44 +274,105 @@ def step2_create_tts_sheets() -> dict:
 
 
 # ═══════════════════════════════════════════════════════════════
-#  Step 3 – 보드 배포 이미지 생성
+#  Step 3 – 보드 + 토큰 배포 이미지 생성
 # ═══════════════════════════════════════════════════════════════
-def step3_deploy_board() -> dict:
-    """Step 3: prototype/images/board/ → deploy/images/*.jpg"""
-    print('\n=== Step 3: 보드 배포 이미지 생성 ===')
+def step3_deploy_board() -> tuple:
+    """Step 3: prototype/images/{board,tokens}/ → deploy/images/
+    반환: (board_info, token_info)
+    """
+    print('\n=== Step 3: 보드 + 토큰 배포 이미지 생성 ===')
 
     board_info: dict = {}
+    token_info: dict = {}
+
+    # ── 보드 이미지 ──────────────────────────────────────────
     board_src = os.path.join(PROTO_IMAGES_DIR, 'board')
+    if os.path.isdir(board_src):
+        for fname in sorted(os.listdir(board_src)):
+            if not fname.lower().endswith('.png'):
+                continue
+            name = os.path.splitext(fname)[0]
+            src  = os.path.join(board_src, fname)
+            dst  = os.path.join(DEPLOY_IMAGES, f'{name}.jpg')
 
-    if not os.path.isdir(board_src):
+            img = Image.open(src).convert('RGB')
+            size_mb = _save_optimized(img, dst)
+            print(f'  보드: {name}.jpg  ({img.width}×{img.height}, {size_mb:.2f}MB)')
+
+            board_info[name] = {
+                'path': dst,
+                'url': f'{GITHUB_RAW}/{name}.jpg',
+                'width': img.width,
+                'height': img.height,
+            }
+    else:
         print('  ⚠  보드 이미지 없음, 건너뜀')
-        return board_info
 
-    for fname in sorted(os.listdir(board_src)):
-        if not fname.lower().endswith('.png'):
-            continue
-        name = os.path.splitext(fname)[0]
-        src  = os.path.join(board_src, fname)
-        dst  = os.path.join(DEPLOY_IMAGES, f'{name}.jpg')
+    # ── 토큰 이미지 ──────────────────────────────────────────
+    tokens_src = os.path.join(PROTO_IMAGES_DIR, 'tokens')
+    if os.path.isdir(tokens_src):
+        for token_type in sorted(os.listdir(tokens_src)):
+            type_dir = os.path.join(tokens_src, token_type)
+            if not os.path.isdir(type_dir):
+                continue
+            deploy_token_dir = os.path.join(DEPLOY_IMAGES, 'tokens', token_type)
+            os.makedirs(deploy_token_dir, exist_ok=True)
 
-        img = Image.open(src).convert('RGB')
-        size_mb = _save_optimized(img, dst)
-        print(f'  보드: {name}.jpg  ({img.width}×{img.height}, {size_mb:.2f}MB)')
+            for fname in sorted(os.listdir(type_dir)):
+                if not fname.lower().endswith('.png'):
+                    continue
+                token_id = os.path.splitext(fname)[0]
+                src = os.path.join(type_dir, fname)
+                dst = os.path.join(deploy_token_dir, fname)
 
-        board_info[name] = {
-            'path': dst,
-            'url': f'{GITHUB_RAW}/{name}.jpg',
-            'width': img.width,
-            'height': img.height,
-        }
+                img = Image.open(src).convert('RGB')
+                img.save(dst, 'PNG')
 
-    return board_info
+                token_info[token_id] = {
+                    'path': dst,
+                    'url': f'{GITHUB_RAW}/tokens/{token_type}/{fname}',
+                    'type': token_type,
+                }
+            print(f'  토큰: {token_type} → deploy/images/tokens/{token_type}/')
+
+    return board_info, token_info
 
 
 # ═══════════════════════════════════════════════════════════════
 #  Step 4 – TTS JSON 생성
 # ═══════════════════════════════════════════════════════════════
-def step4_generate_tts_json(deck_info: dict, board_info: dict) -> str:
+def _add_token_objects(object_states: list, token_info: dict):
+    """토큰 이미지 → TTS Custom_Token 오브젝트로 변환해 object_states에 추가."""
+    # 보드 옆 우측에 3열 그리드 배치
+    token_ids = sorted(token_info.keys())
+    cols = 3
+    for idx, token_id in enumerate(token_ids):
+        info = token_info[token_id]
+        col = idx % cols
+        row = idx // cols
+        pos_x = 14.0 + col * 1.2
+        pos_z = -6.0 + row * 1.2
+
+        object_states.append({
+            'GUID': _make_guid(f'token:{token_id}'),
+            'Name': 'Custom_Token',
+            'Transform': {
+                'posX': pos_x, 'posY': 1.0, 'posZ': pos_z,
+                'rotX': 0.0,   'rotY': 0.0, 'rotZ': 0.0,
+                'scaleX': 0.5, 'scaleY': 0.5, 'scaleZ': 0.5,
+            },
+            'Nickname': token_id,
+            'Description': info.get('type', ''),
+            'CustomImage': {
+                'ImageURL': info['url'],
+                'ImageSecondaryURL': info['url'],
+            },
+            'Tags': ['token', info.get('type', '')],
+        })
+
+
+def step4_generate_tts_json(deck_info: dict, board_info: dict,
+                             token_info: dict | None = None) -> str:
     """
     Step 4: Tabletop Simulator 세이브 파일 생성 (생성규칙.md §3 준수)
     - CustomDeck: FaceURL / BackURL / NumWidth / NumHeight
@@ -316,15 +395,17 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict) -> str:
         'ObjectStates': [],
     }
 
-    # ── 보드 추가 ────────────────────────────────────────────
+    # ── 보드 추가 (스케일 자동 계산) ────────────────────────
     for board_name, info in board_info.items():
+        scale_x = info['width']  / PX_PER_TTS_UNIT
+        scale_z = info['height'] / PX_PER_TTS_UNIT
         tts['ObjectStates'].append({
-            'GUID': _new_guid(),
+            'GUID': _make_guid(f'board:{board_name}'),
             'Name': 'Custom_Tile',
             'Transform': {
                 'posX': 0.0, 'posY': 1.0, 'posZ': 0.0,
                 'rotX': 0.0, 'rotY': 0.0, 'rotZ': 0.0,
-                'scaleX': 20.0, 'scaleY': 1.0, 'scaleZ': 15.0,
+                'scaleX': scale_x, 'scaleY': 1.0, 'scaleZ': scale_z,
             },
             'Nickname': board_name,
             'Description': '메인 보드',
@@ -336,6 +417,10 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict) -> str:
             'Locked': True,
             'Tags': ['Board'],
         })
+
+    # ── 토큰 추가 ────────────────────────────────────────────
+    if token_info:
+        _add_token_objects(tts['ObjectStates'], token_info)
 
     # ── 덱 배치 좌표 사전 설정 ───────────────────────────────
     deck_positions = [
@@ -355,7 +440,7 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict) -> str:
         contained = []
         for i in range(count):
             contained.append({
-                'GUID': _new_guid(),
+                'GUID': _make_guid(f'card:{deck_name}:{i}'),
                 'Name': 'Card',
                 'CardID': cdk_id * 100 + i,
                 'Nickname': f'{deck_name}_{i + 1:03d}',
@@ -379,7 +464,7 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict) -> str:
             })
 
         tts['ObjectStates'].append({
-            'GUID': _new_guid(),
+            'GUID': _make_guid(f'deck:{deck_name}'),
             'Name': 'Deck',
             'Transform': {
                 'posX': float(pos[0]), 'posY': float(pos[1]),
@@ -417,15 +502,18 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict) -> str:
 # ═══════════════════════════════════════════════════════════════
 #  Step 5 – index.html 생성
 # ═══════════════════════════════════════════════════════════════
-def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
-    """Step 5: 생성된 파일을 즉시 확인할 수 있는 미리보기 페이지 생성"""
-    print('\n=== Step 5: index.html 생성 ===')
-
+def _render_html(deck_info: dict, board_info: dict,
+                 images_dir: str, json_file: str) -> str:
+    """HTML 미리보기 문자열 생성.
+    images_dir : 이미지 상대 경로 접두사 (e.g. 'images' 또는 'deploy/images')
+    json_file  : TTS JSON 상대 경로 (e.g. 'yeongjo_kingdom.json' 또는 'deploy/...')
+    """
     build_time  = datetime.now().strftime('%Y년 %m월 %d일 %H:%M:%S')
     total_cards = sum(d['count'] for d in deck_info.values())
+    back_url_full = f'{GITHUB_RAW}/card_back.jpg'
 
     def _sheet_card(deck_name, info):
-        img_rel = f'images/{deck_name}.jpg'
+        img_rel    = f'{images_dir}/{deck_name}.jpg'
         size_label = f'{info["cols"]}×{info["rows"]} 그리드 / {info["count"]}장'
         return f'''
         <div class="card-item">
@@ -442,7 +530,7 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
         </div>'''
 
     def _board_card(board_name, info):
-        img_rel = f'images/{board_name}.jpg'
+        img_rel    = f'{images_dir}/{board_name}.jpg'
         size_label = f'{info["width"]}×{info["height"]}px'
         return f'''
         <div class="card-item">
@@ -466,9 +554,9 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
         _board_card(name, info)
         for name, info in sorted(board_info.items())
     )
-    back_url_full = f'{GITHUB_RAW}/card_back.jpg'
+    back_img = f'{images_dir}/card_back.jpg'
 
-    html = f'''<!DOCTYPE html>
+    return f'''<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -670,8 +758,8 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
           <span class="item-name">card_back</span>
           <span class="item-badge">공용 뒷면</span>
         </div>
-        <a href="images/card_back.jpg" target="_blank">
-          <img src="images/card_back.jpg" alt="card_back" loading="lazy">
+        <a href="{back_img}" target="_blank">
+          <img src="{back_img}" alt="card_back" loading="lazy">
         </a>
         <div class="card-footer">
           <code>{back_url_full}</code>
@@ -688,7 +776,7 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
         게임을 바로 불러올 수 있습니다.<br>
         <code>~/Documents/My Games/Tabletop Simulator/Saves/</code>
       </p>
-      <a href="yeongjo_kingdom.json" download class="dl-btn">
+      <a href="{json_file}" download class="dl-btn">
         yeongjo_kingdom.json 다운로드
       </a>
     </div>
@@ -705,15 +793,23 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
 </html>
 '''
 
-    # deploy/index.html
+
+def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
+    """Step 5: 생성된 파일을 즉시 확인할 수 있는 미리보기 페이지 생성"""
+    print('\n=== Step 5: index.html 생성 ===')
+
+    # deploy/index.html — images/ 기준
+    deploy_html = _render_html(deck_info, board_info,
+                               images_dir='images',
+                               json_file='yeongjo_kingdom.json')
     out_path = os.path.join(DEPLOY_DIR, 'index.html')
     with open(out_path, 'w', encoding='utf-8') as f:
-        f.write(html)
+        f.write(deploy_html)
 
-    # 루트 index.html — 경로만 deploy/ 기준으로 변환
-    root_html = html.replace('href="images/', 'href="deploy/images/') \
-                    .replace('src="images/', 'src="deploy/images/') \
-                    .replace('href="yeongjo_kingdom.json"', 'href="deploy/yeongjo_kingdom.json"')
+    # 루트 index.html — deploy/images/ 기준
+    root_html = _render_html(deck_info, board_info,
+                             images_dir='deploy/images',
+                             json_file='deploy/yeongjo_kingdom.json')
     root_path = os.path.join(PROJECT_ROOT, 'index.html')
     with open(root_path, 'w', encoding='utf-8') as f:
         f.write(root_html)
@@ -727,9 +823,15 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
 #  메인
 # ═══════════════════════════════════════════════════════════════
 def main():
+    force = '--force' in sys.argv
+
     print('=' * 60)
     print('영조의나라 통합 빌드 시작')
     print(f'출력 경로: {DEPLOY_DIR}')
+    if force:
+        print('모드: 강제 전체 재빌드 (--force)')
+    else:
+        print('모드: 증분 빌드 (변경된 항목만 재생성)')
     print('=' * 60)
 
     os.makedirs(DEPLOY_DIR, exist_ok=True)
@@ -738,10 +840,10 @@ def main():
     start = datetime.now()
 
     try:
-        step1_generate_images()
-        deck_info  = step2_create_tts_sheets()
-        board_info = step3_deploy_board()
-        step4_generate_tts_json(deck_info, board_info)
+        step1_generate_images(force=force)
+        deck_info              = step2_create_tts_sheets()
+        board_info, token_info = step3_deploy_board()
+        step4_generate_tts_json(deck_info, board_info, token_info)
         step5_generate_index_html(deck_info, board_info)
 
         elapsed = (datetime.now() - start).total_seconds()

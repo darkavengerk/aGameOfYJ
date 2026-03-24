@@ -7,6 +7,8 @@ import json
 import os
 from PIL import Image, ImageDraw, ImageFont
 from config import CARD_CONFIG, BOARD_CONFIG, COLORS, FONTS
+from utils import wrap_text
+from card_layout_engine import CardRenderer, LayoutFactory
 
 class DataImageGenerator:
     def __init__(self, data_dir="../../data", output_dir="../images"):
@@ -16,44 +18,57 @@ class DataImageGenerator:
         self.board_config = BOARD_CONFIG
         self.colors = COLORS
         self.fonts = FONTS
+        self._renderer = CardRenderer(CARD_CONFIG['width'], CARD_CONFIG['height'])
+        self._layout_cache: dict = {}   # layout name → layout config dict
         
-    def generate_all(self):
-        """모든 데이터를 기반으로 이미지 생성"""
-        print("데이터 기반 이미지 생성 시작...")
-        
-        # 카드 이미지 생성
-        self.generate_cards()
-        
-        # 토큰 이미지 생성
-        self.generate_tokens()
-        
-        # 보드 이미지 생성
-        self.generate_boards()
-        
-        print("모든 이미지 생성 완료!")
-    
+    def _load_layout(self, layout_name: str) -> dict:
+        """data/layouts/{name}.json 을 로드 (캐시 사용)"""
+        if layout_name not in self._layout_cache:
+            path = os.path.join(self.data_dir, 'layouts', f'{layout_name}.json')
+            with open(path, 'r', encoding='utf-8') as f:
+                self._layout_cache[layout_name] = json.load(f)
+        return self._layout_cache[layout_name]
+
     def generate_cards(self):
         """카드 데이터를 기반으로 이미지 생성"""
         print("카드 이미지 생성...")
-        
+
         cards_dir = os.path.join(self.data_dir, 'cards')
         output_cards_dir = os.path.join(self.output_dir, 'cards')
         os.makedirs(output_cards_dir, exist_ok=True)
-        
-        for filename in os.listdir(cards_dir):
+
+        for filename in sorted(os.listdir(cards_dir)):
             if filename.endswith('.json'):
                 filepath = os.path.join(cards_dir, filename)
                 with open(filepath, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                
+
+                # gapja 계열은 gapja_generator 가 담당 — skip
+                if data.get('layout') == 'gapja_card':
+                    continue
+
                 # cards 키가 있는지 확인
                 if 'cards' in data:
                     card_type = data['type']
+                    layout_name = data.get('layout')
+                    layout_config = self._load_layout(layout_name) if layout_name else None
                     card_output_dir = os.path.join(output_cards_dir, card_type)
                     os.makedirs(card_output_dir, exist_ok=True)
-                    
+
                     for card in data['cards']:
-                        self.create_card_from_data(card, card_type, card_output_dir)
+                        if layout_config:
+                            self._create_card_with_layout(card, layout_config, card_output_dir)
+                        else:
+                            self.create_card_from_data(card, card_type, card_output_dir)
+
+    def _create_card_with_layout(self, card_data: dict, layout_config: dict, output_dir: str):
+        """레이아웃 엔진을 통한 카드 이미지 생성"""
+        image = self._renderer.render_card(card_data, layout_config, {})
+        filename = f"{card_data['id']}.png"
+        output_path = os.path.join(output_dir, filename)
+        image.save(output_path, 'PNG', dpi=(self.card_config['dpi'], self.card_config['dpi']))
+        print(f"생성: {output_path}")
+        return output_path
     
     def create_card_from_data(self, card_data, card_type, output_dir):
         """카드 데이터로부터 이미지 생성"""
@@ -107,8 +122,8 @@ class DataImageGenerator:
         else:
             content = f"{card_data.get('animal', '')} {card_data.get('gan', '')}{card_data.get('ji', '')}"
             
-        lines = self._wrap_text(content, body_font, 
-                               self.card_config['width'] - 2 * self.card_config['margin'] - 40)
+        lines = wrap_text(content, body_font,
+                          self.card_config['width'] - 2 * self.card_config['margin'] - 40)
         
         y_offset = title_y + 50
         for line in lines:
@@ -138,7 +153,7 @@ class DataImageGenerator:
         output_tokens_dir = os.path.join(self.output_dir, 'tokens')
         os.makedirs(output_tokens_dir, exist_ok=True)
         
-        for filename in os.listdir(tokens_dir):
+        for filename in sorted(os.listdir(tokens_dir)):
             if filename.endswith('.json'):
                 filepath = os.path.join(tokens_dir, filename)
                 with open(filepath, 'r', encoding='utf-8') as f:
@@ -200,7 +215,7 @@ class DataImageGenerator:
         output_boards_dir = os.path.join(self.output_dir, 'board')
         os.makedirs(output_boards_dir, exist_ok=True)
         
-        for filename in os.listdir(boards_dir):
+        for filename in sorted(os.listdir(boards_dir)):
             if filename.endswith('.json'):
                 filepath = os.path.join(boards_dir, filename)
                 with open(filepath, 'r', encoding='utf-8') as f:
@@ -281,32 +296,9 @@ class DataImageGenerator:
         print(f"생성: {output_path}")
         return output_path
     
-    def _wrap_text(self, text, font, max_width):
-        """텍스트 자동 줄바꿈"""
-        lines = []
-        words = text.split(' ')
-        current_line = []
-        
-        for word in words:
-            test_line = ' '.join(current_line + [word])
-            bbox = ImageDraw.Draw(Image.new('RGB', (1, 1))).textbbox((0, 0), test_line, font=font)
-            text_width = bbox[2] - bbox[0]
-            
-            if text_width <= max_width:
-                current_line.append(word)
-            else:
-                if current_line:
-                    lines.append(' '.join(current_line))
-                    current_line = [word]
-                else:
-                    lines.append(word)
-        
-        if current_line:
-            lines.append(' '.join(current_line))
-        
-        return lines
 
-# 사용 예시
 if __name__ == "__main__":
     generator = DataImageGenerator()
-    generator.generate_all()
+    generator.generate_cards()
+    generator.generate_tokens()
+    generator.generate_boards()

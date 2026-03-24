@@ -1,50 +1,23 @@
 {
   "type": "event_cards",
   "description": "사건 카드 데이터",
+  "layout": "standard_card",
   "cards": [
     {
-      "id": "event_001",
       "title": "가뭄",
-      "content": "농업 피해. 모든 플레이어 영향력 1 감소.",
-      "trigger": "round_start",
-      "effect": {
-        "all_players": {
-          "influence": -1
-        }
-      }
+      "main_text": "극심한 가뭄으로 농업이 황폐해진다. 라운드 시작 시 모든 플레이어 영향력 1 감소."
     },
     {
-      "id": "event_002",
       "title": "이조전랑 논쟁",
-      "content": "조정 분열. 다음 라운드 행동 토큰 1개 감소.",
-      "trigger": "round_start", 
-      "effect": {
-        "next_round": {
-          "action_tokens": -1
-        }
-      }
+      "main_text": "인사권을 둘러싼 당파 간 갈등이 조정을 흔든다. 다음 라운드 행동 토큰 1 감소."
     },
     {
-      "id": "event_003",
       "title": "민란 발생",
-      "content": "백성 불만. 리더 플레이어 영향력 2 감소.",
-      "trigger": "round_start",
-      "effect": {
-        "leading_player": {
-          "influence": -2
-        }
-      }
+      "main_text": "백성의 누적된 불만이 폭발하여 지방 곳곳에서 반란이 일어난다. 선두 플레이어 영향력 2 감소."
     },
     {
-      "id": "event_004",
       "title": "청과의 무역",
-      "content": "경제 활성화. 모든 플레이어 자원 토큰 1개 획득.",
-      "trigger": "round_start",
-      "effect": {
-        "all_players": {
-          "resource": 1
-        }
-      }
+      "main_text": "청나라와의 교역 확대로 새로운 물자가 유입된다. 모든 플레이어 자원 1 획득."
     }
   ]
 }

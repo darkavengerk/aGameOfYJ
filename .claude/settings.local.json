@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import data_generator; import gapja_generator; import card_layout_engine; print\\(''OK''\\)\")",
+      "Bash(python -c \":*)"
+    ]
+  }
+}
