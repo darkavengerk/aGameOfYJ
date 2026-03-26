@@ -4,6 +4,7 @@ prototype/images/
 rulebook/build/
 prototype/tabletop/
 deploy/
+.tokens
 
 # Python
 __pycache__/
