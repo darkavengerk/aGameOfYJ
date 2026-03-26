@@ -1,6 +1,6 @@
 {
   "SaveName": "영조의나라",
-  "Date": "2026-03-24T04:50:01.313102",
+  "Date": "2026-03-24T05:11:06.372213",
   "VersionNumber": "1.0",
   "GameMode": "영조의나라",
   "Table": "",
@@ -2465,18 +2465,19 @@
         "scaleZ": 1.0
       },
       "Nickname": "policy_cards",
-      "Description": "4장",
+      "Description": "5장",
       "DeckIDs": [
         300,
         301,
         302,
-        303
+        303,
+        304
       ],
       "CustomDeck": {
         "3": {
           "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
           "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-          "NumWidth": 5,
+          "NumWidth": 6,
           "NumHeight": 1,
           "BackIsHidden": true,
           "UniqueBack": false
@@ -2504,7 +2505,7 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 6,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2535,7 +2536,7 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 6,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2566,7 +2567,7 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 6,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
@@ -2597,7 +2598,38 @@
             "3": {
               "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
               "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
-              "NumWidth": 5,
+              "NumWidth": 6,
+              "NumHeight": 1,
+              "BackIsHidden": true,
+              "UniqueBack": false
+            }
+          },
+          "Tags": [
+            "policy_cards"
+          ]
+        },
+        {
+          "GUID": "df6f31",
+          "Name": "Card",
+          "CardID": 304,
+          "Nickname": "policy_cards_005",
+          "Description": "",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 180.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "CustomDeck": {
+            "3": {
+              "FaceURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/policy_cards.jpg",
+              "BackURL": "https://raw.githubusercontent.com/darkavengerk/aGameOfYJ/master/deploy/images/card_back.jpg",
+              "NumWidth": 6,
               "NumHeight": 1,
               "BackIsHidden": true,
               "UniqueBack": false
