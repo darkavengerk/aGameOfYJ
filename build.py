@@ -844,13 +844,31 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
     deploy_html = _render_html(deck_info, board_info,
                                images_dir='images',
                                json_file='yeongjo_kingdom.json',
-                               editor_link='../editor/index.html')
+                               editor_link='editor/index.html')
     out_path = os.path.join(DEPLOY_DIR, 'index.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(deploy_html)
 
     print(f'  deploy/index.html 생성 완료')
     return out_path
+
+
+def step6_deploy_editor() -> None:
+    """Step 6: editor/ 소스를 deploy/editor/ 로 복사"""
+    import shutil
+    print('\n=== Step 6: 에디터 배포 ===')
+
+    src_dir = os.path.join(PROJECT_ROOT, 'editor')
+    dst_dir = os.path.join(DEPLOY_DIR, 'editor')
+
+    if not os.path.isdir(src_dir):
+        print('  [!] editor/ 폴더 없음, 건너뜀')
+        return
+
+    if os.path.exists(dst_dir):
+        shutil.rmtree(dst_dir)
+    shutil.copytree(src_dir, dst_dir)
+    print(f'  deploy/editor/ 생성 완료')
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -879,6 +897,7 @@ def main():
         board_info, token_info = step3_deploy_board()
         step4_generate_tts_json(deck_info, board_info, token_info)
         step5_generate_index_html(deck_info, board_info)
+        step6_deploy_editor()
 
         elapsed = (datetime.now() - start).total_seconds()
         total   = sum(d['count'] for d in deck_info.values())
