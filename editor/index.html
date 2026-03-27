@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영조의나라 — 카드 에디터</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+
+<!-- ── 헤더 ─────────────────────────────────────────────────── -->
+<header>
+  <h1>영조의나라 — 카드 에디터</h1>
+  <nav class="header-nav">
+    <a href="../index.html" class="nav-btn">← 메인</a>
+    <button id="nav-editor"   class="nav-btn active">에디터</button>
+    <button id="nav-settings" class="nav-btn">설정 (PAT)</button>
+  </nav>
+</header>
+
+<!-- ── 에디터 뷰 ─────────────────────────────────────────────── -->
+<div class="app" id="editor-view">
+
+  <!-- 사이드바 -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <select id="deck-select" class="deck-select">
+        <option disabled selected>덱 선택…</option>
+      </select>
+    </div>
+    <div id="card-list" class="card-list"></div>
+    <div class="sidebar-footer">
+      <button class="add-btn" onclick="editor.addCard()">+ 카드 추가</button>
+    </div>
+  </aside>
+
+  <!-- 에디터 메인 -->
+  <main class="editor-main">
+
+    <div id="editor-placeholder" class="editor-placeholder">
+      ← 카드를 선택하거나 + 카드 추가를 눌러 시작하세요
+    </div>
+
+    <div id="card-form-wrap" class="hidden">
+      <form id="card-form" class="card-form" onsubmit="return false">
+
+        <!-- 갑자 카드 읽기 전용 정보 -->
+        <div id="gapja-info" class="hidden">
+          <div class="form-row">
+            <label>카드 정보 (읽기 전용)</label>
+            <div id="f-gapja-info" class="form-control"
+                 style="background:transparent; border-color: var(--border); color:var(--muted); cursor:default;"></div>
+          </div>
+        </div>
+
+        <!-- 제목 (표준 카드만) -->
+        <div id="title-row" class="form-row">
+          <label>제목</label>
+          <input id="f-title" class="form-control" oninput="editor.markDirty()">
+        </div>
+
+        <!-- 메인 텍스트 (모든 카드 공통) -->
+        <div class="form-row">
+          <label>카드 텍스트 (main_text)</label>
+          <textarea id="f-main-text" class="form-control" rows="6"
+                    oninput="editor.markDirty()"
+                    placeholder="카드에 표시될 능력/설명 텍스트를 입력하세요"></textarea>
+        </div>
+
+        <!-- 액션 버튼 -->
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary"
+                  onclick="editor.discardChanges()">취소</button>
+          <button type="button" id="publish-btn" class="btn btn-primary"
+                  onclick="editor.publish()">발행</button>
+          <button type="button" class="btn btn-danger"
+                  onclick="editor.deleteCard()">삭제</button>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+</div>
+
+<!-- ── 설정 뷰 ───────────────────────────────────────────────── -->
+<div id="settings-view" class="hidden" style="padding: 24px;">
+  <div>
+    <h2>GitHub PAT 설정</h2>
+    <p style="margin-top:12px; margin-bottom:16px; color:var(--muted); font-size:.88rem; line-height:1.7;">
+      카드 데이터를 저장하려면 GitHub Personal Access Token이 필요합니다.<br>
+      <a href="https://github.com/settings/tokens/new" target="_blank" rel="noopener">
+        GitHub → Settings → Developer settings → Personal access tokens
+      </a>에서 발급하고,<br>
+      권한: <code>Contents: write</code> 을 선택하세요.
+    </p>
+
+    <div class="form-row">
+      <label>Personal Access Token</label>
+      <input id="token-input" type="password" class="form-control"
+             placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+      <p style="margin-top:6px; font-size:.78rem; color:var(--muted);">
+        ⚠ 토큰은 이 브라우저 세션에만 저장됩니다 (sessionStorage).
+        코드에 절대 포함하지 마세요.
+      </p>
+    </div>
+
+    <div class="form-actions" style="margin-top:20px; padding-top:0; border:none;">
+      <button type="button" id="save-token-btn" class="btn btn-primary">저장</button>
+      <button type="button" id="clear-token-btn" class="btn btn-secondary">삭제</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── 상태 바 ───────────────────────────────────────────────── -->
+<footer class="status-bar">
+  <div id="status-dot" class="status-dot"></div>
+  <span id="status-text">준비 중…</span>
+</footer>
+
+<script src="editor.js"></script>
+</body>
+</html>
