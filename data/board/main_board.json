@@ -1,114 +1,213 @@
 {
   "type": "board",
-  "description": "메인 보드 데이터",
+  "description": "메인 보드 데이터 — 영조의나라 (초안2 기반 레이아웃)",
   "board": {
     "id": "main_board",
-    "title": "영조의나라",
+    "title": "",
     "width": 2400,
-    "height": 1800,
-    "grid_size": 60,
-    "margin": 100,
+    "height": 3580,
+    "card_slot_width": 300,
+    "card_slot_height": 360,
+    "card_slot_radius": 18,
     "sections": [
       {
-        "id": "court",
-        "name": "조정",
-        "type": "area",
+        "id": "somuun_left",
+        "name": "소문",
+        "type": "side_panel",
+        "rotation": 270,
+        "position": {"x": 60, "y": 60},
+        "size": {"width": 300, "height": 840},
+        "style": {
+          "background": "#D8CCBC",
+          "border_color": "#6B4226",
+          "border_width": 2
+        }
+      },
+      {
+        "id": "somuun_right",
+        "name": "소문",
+        "type": "side_panel",
+        "rotation": 90,
+        "position": {"x": 2040, "y": 60},
+        "size": {"width": 300, "height": 840},
+        "style": {
+          "background": "#D8CCBC",
+          "border_color": "#6B4226",
+          "border_width": 2
+        }
+      },
+      {
+        "id": "policy_area",
+        "name": "정책 영역",
+        "type": "open_area",
+        "position": {"x": 360, "y": 60},
+        "size": {"width": 1680, "height": 840},
+        "style": {
+          "background": "#F5EDD5",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "label_bg": "#C8A030",
+          "text_color": "#2C1810"
+        }
+      },
+      {
+        "id": "uijeongbu",
+        "name": "의정부",
+        "type": "card_row",
+        "card_count": 3,
+        "slot_labels": ["좌", "영", "우"],
+        "position": {"x": 60, "y": 900},
+        "size": {"width": 2280, "height": 500},
         "style": {
           "background": "#FFF8F0",
           "border_color": "#8B4513",
-          "border_width": 3,
-          "header_color": "#D4AF37",
-          "header_height": 40
-        },
-        "position": {"x": 0, "y": 0},
-        "size": {"width": 800, "height": 600},
-        "description": "왕과 대신들이 활동하는 중심 공간"
+          "border_width": 2,
+          "header_color": "#C19A2E",
+          "header_height": 55
+        }
       },
       {
-        "id": "regions",
-        "name": "지방",
-        "type": "area",
+        "id": "yeongjo",
+        "name": "육조",
+        "type": "card_row",
+        "card_count": 6,
+        "slot_labels": ["이", "호", "예", "병", "형", "공"],
+        "position": {"x": 60, "y": 1400},
+        "size": {"width": 2280, "height": 500},
         "style": {
-          "background": "#F0F8E8",
-          "border_color": "#556B2F",
+          "background": "#FFF0DC",
+          "border_color": "#7A3B00",
           "border_width": 3,
-          "header_color": "#6B8E23",
-          "header_height": 40
-        },
-        "position": {"x": 800, "y": 0},
-        "size": {"width": 800, "height": 600},
-        "description": "각 지방의 상황을 나타내는 공간"
+          "header_color": "#B8860B",
+          "header_height": 60
+        }
       },
       {
-        "id": "foreign",
-        "name": "외교",
-        "type": "area",
+        "id": "myeongbun_left",
+        "name": "명분카드",
+        "type": "side_panel",
+        "rotation": 270,
+        "position": {"x": 60, "y": 1900},
+        "size": {"width": 300, "height": 500},
         "style": {
-          "background": "#EEF0F8",
-          "border_color": "#4169E1",
-          "border_width": 3,
-          "header_color": "#4169E1",
-          "header_height": 40
-        },
-        "position": {"x": 1600, "y": 0},
-        "size": {"width": 800, "height": 600},
-        "description": "청, 일본 등 외교 관련 공간"
+          "background": "#C8BCA8",
+          "border_color": "#6B4226",
+          "border_width": 2
+        }
       },
       {
-        "id": "policy_track",
-        "name": "정책 추진",
-        "type": "track",
-        "slots": 8,
-        "slot_style": {
-          "background": "#F5F0E8",
-          "border_color": "#654321"
-        },
+        "id": "myeongbun_right",
+        "name": "명분카드",
+        "type": "side_panel",
+        "rotation": 90,
+        "position": {"x": 2040, "y": 1900},
+        "size": {"width": 300, "height": 500},
         "style": {
-          "background": "#EDE0C8",
+          "background": "#C8BCA8",
+          "border_color": "#6B4226",
+          "border_width": 2
+        }
+      },
+      {
+        "id": "ijojeongnang",
+        "name": "이조전랑",
+        "type": "card_box",
+        "slot_width": 220,
+        "position": {"x": 400, "y": 1900},
+        "size": {"width": 270, "height": 500},
+        "style": {
+          "background": "#F0EAE0",
           "border_color": "#8B4513",
           "border_width": 2,
-          "header_color": "#D4AF37",
-          "header_height": 35
-        },
-        "position": {"x": 0, "y": 600},
-        "size": {"width": 2400, "height": 300},
-        "description": "정책 카드 추진 상황을 추적하는 공간"
+          "header_color": "#C19A2E",
+          "header_height": 55
+        }
       },
       {
-        "id": "event_track",
-        "name": "사건 기록",
-        "type": "track",
-        "slots": 8,
-        "slot_style": {
-          "background": "#F0E8E8",
-          "border_color": "#8B2020"
-        },
+        "id": "samsa",
+        "name": "삼사",
+        "type": "card_row",
+        "card_count": 3,
+        "position": {"x": 690, "y": 1900},
+        "size": {"width": 1020, "height": 500},
         "style": {
-          "background": "#E8D0D0",
-          "border_color": "#8B2020",
+          "background": "#EEF8EE",
+          "border_color": "#4A7A3A",
           "border_width": 2,
-          "header_color": "#DC143C",
-          "header_height": 35
-        },
-        "position": {"x": 0, "y": 900},
-        "size": {"width": 2400, "height": 300},
-        "description": "발생한 사건들을 기록하는 공간"
+          "header_color": "#5A8A3A",
+          "header_height": 55
+        }
       },
       {
-        "id": "player_areas",
-        "name": "플레이어 구역",
-        "type": "player_mat",
-        "player_count": 4,
+        "id": "bibyeonsa",
+        "name": "비변사",
+        "type": "card_box",
+        "slot_width": 220,
+        "position": {"x": 1730, "y": 1900},
+        "size": {"width": 270, "height": 500},
         "style": {
-          "background": "#F5F5F0",
+          "background": "#F0EAE0",
           "border_color": "#8B4513",
           "border_width": 2,
-          "header_color": "#D4AF37",
-          "header_height": 35
-        },
-        "position": {"x": 0, "y": 1200},
-        "size": {"width": 2400, "height": 600},
-        "description": "각 플레이어의 개인 구역"
+          "header_color": "#C19A2E",
+          "header_height": 55
+        }
+      },
+      {
+        "id": "turn_info",
+        "name": "턴정보",
+        "type": "info_box",
+        "position": {"x": 60, "y": 2400},
+        "size": {"width": 500, "height": 700},
+        "style": {
+          "background": "#E8DDD0",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "header_color": "#8B3A1A",
+          "header_height": 55
+        }
+      },
+      {
+        "id": "general_info",
+        "name": "각종 정보",
+        "type": "info_box",
+        "position": {"x": 590, "y": 2400},
+        "size": {"width": 1220, "height": 700},
+        "style": {
+          "background": "#EEE8DC",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "header_color": "#7A5530",
+          "header_height": 55
+        }
+      },
+      {
+        "id": "investigation",
+        "name": "조사",
+        "type": "info_box",
+        "position": {"x": 1840, "y": 2400},
+        "size": {"width": 500, "height": 700},
+        "style": {
+          "background": "#E8DDD0",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "header_color": "#8B3A1A",
+          "header_height": 55
+        }
+      },
+      {
+        "id": "core_policy",
+        "name": "핵심 정책",
+        "type": "open_area",
+        "position": {"x": 60, "y": 3100},
+        "size": {"width": 2280, "height": 420},
+        "style": {
+          "background": "#F0E6C4",
+          "border_color": "#8B4513",
+          "border_width": 2,
+          "label_bg": "#C8A030",
+          "text_color": "#2C1810"
+        }
       }
     ]
   }

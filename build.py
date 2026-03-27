@@ -58,14 +58,11 @@ def _save_build_cache(cache: dict):
     with open(_BUILD_CACHE_PATH, 'w', encoding='utf-8') as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-# ─── GitHub Raw URL 설정 (TTS FaceURL / BackURL 에 사용) ──────
+# ─── GitHub 설정 ─────────────────────────────────────────────
 GITHUB_USER   = 'darkavengerk'
 GITHUB_REPO   = 'aGameOfYJ'
-GITHUB_BRANCH = 'master'
-GITHUB_RAW    = (
-    f'https://raw.githubusercontent.com/{GITHUB_USER}/'
-    f'{GITHUB_REPO}/{GITHUB_BRANCH}/deploy/images'
-)
+GITHUB_PAGES  = f'https://{GITHUB_USER}.github.io/{GITHUB_REPO}'
+GITHUB_RAW    = f'{GITHUB_PAGES}/images'   # GitHub Pages 서빙 URL
 
 # ─── TTS 스케일 상수 (생성규칙.md §3) ────────────────────────
 PX_PER_TTS_UNIT = 120   # 1 TTS 유닛 = 120px (보드 스케일 자동 계산용)
@@ -202,7 +199,7 @@ def create_sheet(card_paths: list, deck_name: str) -> dict | None:
     # 최대 규격 초과 처리
     if rows > MAX_ROWS:
         max_cards = MAX_COLS * MAX_ROWS - 1
-        print(f'  ⚠  {deck_name}: 카드 수({n}) > 최대({max_cards}), 초과분 제외')
+        print(f'  [!] {deck_name}: 카드 수({n}) > 최대({max_cards}), 초과분 제외')
         n = max_cards
         card_paths = card_paths[:n]
         cols, rows = MAX_COLS, MAX_ROWS
@@ -223,7 +220,7 @@ def create_sheet(card_paths: list, deck_name: str) -> dict | None:
                 (CARD_W, CARD_H), Image.LANCZOS
             )
         except Exception as e:
-            print(f'  ⚠  카드 로드 실패: {path} ({e})')
+            print(f'  [!] 카드 로드 실패: {path} ({e})')
             card_img = Image.new('RGB', (CARD_W, CARD_H), '#555555')
         sheet.paste(card_img, (col * CARD_W, row * CARD_H))
 
@@ -306,7 +303,7 @@ def step3_deploy_board() -> tuple:
                 'height': img.height,
             }
     else:
-        print('  ⚠  보드 이미지 없음, 건너뜀')
+        print('  [!] 보드 이미지 없음, 건너뜀')
 
     # ── 토큰 이미지 ──────────────────────────────────────────
     tokens_src = os.path.join(PROTO_IMAGES_DIR, 'tokens')
@@ -399,7 +396,26 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict,
     for board_name, info in board_info.items():
         scale_x = info['width']  / PX_PER_TTS_UNIT
         scale_z = info['height'] / PX_PER_TTS_UNIT
-        tts['ObjectStates'].append({
+
+        # 스냅 포인트 — 보드 핸들러가 생성한 _snap.json 읽기
+        snap_points = []
+        snap_path = os.path.join(PROTO_IMAGES_DIR, 'board', f'{board_name}_snap.json')
+        if os.path.exists(snap_path):
+            with open(snap_path, 'r', encoding='utf-8') as _sf:
+                snap_data = json.load(_sf)
+            bw = snap_data['board_width']
+            bh = snap_data['board_height']
+            for sp in snap_data['snap_points']:
+                sx = (sp['pixel_x'] - bw / 2) / PX_PER_TTS_UNIT
+                sz = (sp['pixel_y'] - bh / 2) / PX_PER_TTS_UNIT
+                snap_points.append({
+                    'Position': {'x': round(sx, 4), 'y': 0.1, 'z': round(sz, 4)},
+                    'Rotation': {'x': 0.0, 'y': 0.0, 'z': 0.0},
+                    'Tags': [],
+                })
+            print(f'  스냅 포인트: {board_name} {len(snap_points)}개')
+
+        board_obj = {
             'GUID': _make_guid(f'board:{board_name}'),
             'Name': 'Custom_Tile',
             'Transform': {
@@ -416,7 +432,10 @@ def step4_generate_tts_json(deck_info: dict, board_info: dict,
             },
             'Locked': True,
             'Tags': ['Board'],
-        })
+        }
+        if snap_points:
+            board_obj['SnapPoints'] = snap_points
+        tts['ObjectStates'].append(board_obj)
 
     # ── 토큰 추가 ────────────────────────────────────────────
     if token_info:
@@ -731,9 +750,10 @@ def _render_html(deck_info: dict, board_info: dict,
   <h1>영조의나라 — Tabletop Simulator 배포 파일</h1>
   <div class="meta">
     빌드: {build_time} &nbsp;|&nbsp;
-    저장소: {GITHUB_USER}/{GITHUB_REPO} @ {GITHUB_BRANCH}
+    저장소: {GITHUB_USER}/{GITHUB_REPO}
   </div>
   <nav class="header-nav">
+    <a href="https://github.com/{GITHUB_USER}/{GITHUB_REPO}" class="nav-link" target="_blank">← GitHub 저장소</a>
     <a href="{editor_link}" class="nav-link">카드 에디터 →</a>
   </nav>
 </header>
@@ -818,10 +838,9 @@ def _render_html(deck_info: dict, board_info: dict,
 
 
 def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
-    """Step 5: 생성된 파일을 즉시 확인할 수 있는 미리보기 페이지 생성"""
+    """Step 5: deploy/index.html 생성 (GitHub Pages 배포용)"""
     print('\n=== Step 5: index.html 생성 ===')
 
-    # deploy/index.html — images/ 기준
     deploy_html = _render_html(deck_info, board_info,
                                images_dir='images',
                                json_file='yeongjo_kingdom.json',
@@ -830,16 +849,7 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(deploy_html)
 
-    # 루트 index.html — deploy/images/ 기준
-    root_html = _render_html(deck_info, board_info,
-                             images_dir='deploy/images',
-                             json_file='deploy/yeongjo_kingdom.json')
-    root_path = os.path.join(PROJECT_ROOT, 'index.html')
-    with open(root_path, 'w', encoding='utf-8') as f:
-        f.write(root_html)
-
     print(f'  deploy/index.html 생성 완료')
-    print(f'  index.html (루트) 갱신 완료')
     return out_path
 
 

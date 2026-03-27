@@ -1,17 +1,14 @@
-name: Build TTS Deploy Assets
+name: Build & Deploy TTS Assets
 
 on:
   push:
     branches: [master]
-    paths-ignore:
-      # 봇이 deploy/ 를 커밋할 때 다시 트리거되지 않도록 제외
-      - 'deploy/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # 빌드 결과물을 커밋·푸시하기 위해 필요
+      contents: write   # gh-pages 브랜치 푸시에 필요
 
     steps:
       - name: Checkout
@@ -31,12 +28,16 @@ jobs:
       - name: Build deploy assets
         run: python build.py
 
-      - name: Commit & push deploy assets
+      - name: Deploy to gh-pages
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f deploy/ && git add index.html
-          # 변경사항이 없으면 커밋하지 않음
-          git diff --staged --quiet && echo "변경 없음, 스킵" && exit 0
-          git commit -m "chore: rebuild TTS deploy assets [skip ci]"
-          git push
+
+          # deploy/ 내용을 gh-pages 브랜치에 배포 (orphan push)
+          cd deploy
+          git init -b gh-pages
+          git add -A
+          git commit -m "deploy: rebuild TTS assets [skip ci]"
+          git remote add origin \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git push origin gh-pages --force
