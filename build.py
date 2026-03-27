@@ -6,8 +6,11 @@
   Step 2 - TTS 카드 시트 생성  (생성규칙.md 준수)
   Step 3 - 보드 배포 이미지 생성
   Step 4 - TTS JSON 세이브 파일 생성
-  Step 5 - deploy/index.html 생성 (미리보기 페이지)
-모든 배포 파일은 deploy/ 폴더에 저장됩니다.
+  Step 5 - preview.html 생성 (미리보기 페이지)
+  Step 6 - editor/ 및 index.html 복사
+
+기본: build/ 폴더에 출력 (gitignore)
+배포: python build.py --deploy → deploy/ 폴더에 출력 (git 추적)
 """
 
 import os
@@ -23,8 +26,10 @@ PROJECT_ROOT     = os.path.dirname(os.path.abspath(__file__))
 PROTOTYPE_SCRIPTS = os.path.join(PROJECT_ROOT, 'prototype', 'scripts')
 DATA_DIR         = os.path.join(PROJECT_ROOT, 'data')
 PROTO_IMAGES_DIR = os.path.join(PROJECT_ROOT, 'prototype', 'images')
-DEPLOY_DIR       = os.path.join(PROJECT_ROOT, 'deploy')
-DEPLOY_IMAGES    = os.path.join(DEPLOY_DIR, 'images')
+
+_DEPLOY_MODE  = '--deploy' in sys.argv
+DEPLOY_DIR    = os.path.join(PROJECT_ROOT, 'deploy' if _DEPLOY_MODE else 'build')
+DEPLOY_IMAGES = os.path.join(DEPLOY_DIR, 'images')
 
 sys.path.insert(0, PROTOTYPE_SCRIPTS)
 
@@ -854,21 +859,27 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
 
 
 def step6_deploy_editor() -> None:
-    """Step 6: editor/ 소스를 deploy/editor/ 로 복사"""
+    """Step 6: index.html 및 editor/ 소스를 출력 폴더로 복사"""
     import shutil
-    print('\n=== Step 6: 에디터 배포 ===')
+    out_name = 'deploy' if _DEPLOY_MODE else 'build'
+    print(f'\n=== Step 6: 정적 파일 복사 → {out_name}/ ===')
 
+    # 루트 index.html → 홈페이지
+    src_html = os.path.join(PROJECT_ROOT, 'index.html')
+    if os.path.exists(src_html):
+        shutil.copy2(src_html, os.path.join(DEPLOY_DIR, 'index.html'))
+        print(f'  index.html 복사 완료')
+
+    # editor/ 폴더
     src_dir = os.path.join(PROJECT_ROOT, 'editor')
     dst_dir = os.path.join(DEPLOY_DIR, 'editor')
-
     if not os.path.isdir(src_dir):
         print('  [!] editor/ 폴더 없음, 건너뜀')
         return
-
     if os.path.exists(dst_dir):
         shutil.rmtree(dst_dir)
     shutil.copytree(src_dir, dst_dir)
-    print(f'  deploy/editor/ 생성 완료')
+    print(f'  editor/ 복사 완료')
 
 
 # ═══════════════════════════════════════════════════════════════
