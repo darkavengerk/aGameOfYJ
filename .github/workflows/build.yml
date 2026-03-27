@@ -30,6 +30,9 @@ jobs:
 
       - name: Deploy to gh-pages
         run: |
+          # 루트 index.html을 홈페이지로 deploy/에 복사
+          cp index.html deploy/index.html
+
           # deploy/ 내용을 gh-pages 브랜치에 배포 (orphan push)
           cd deploy
           git init -b gh-pages

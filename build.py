@@ -753,7 +753,7 @@ def _render_html(deck_info: dict, board_info: dict,
     저장소: {GITHUB_USER}/{GITHUB_REPO}
   </div>
   <nav class="header-nav">
-    <a href="https://github.com/{GITHUB_USER}/{GITHUB_REPO}" class="nav-link" target="_blank">← GitHub 저장소</a>
+    <a href="./index.html" class="nav-link">← 홈</a>
     <a href="{editor_link}" class="nav-link">카드 에디터 →</a>
   </nav>
 </header>
@@ -845,11 +845,11 @@ def step5_generate_index_html(deck_info: dict, board_info: dict) -> str:
                                images_dir='images',
                                json_file='yeongjo_kingdom.json',
                                editor_link='editor/index.html')
-    out_path = os.path.join(DEPLOY_DIR, 'index.html')
+    out_path = os.path.join(DEPLOY_DIR, 'preview.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(deploy_html)
 
-    print(f'  deploy/index.html 생성 완료')
+    print(f'  deploy/preview.html 생성 완료')
     return out_path
 
 
